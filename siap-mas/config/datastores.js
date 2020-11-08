@@ -52,7 +52,9 @@ module.exports.datastores = {
     // url: 'mysql://user:password@host:port/database',
 
     adapter: 'sails-mongo',
-    url: 'mongodb://localhost:27017/siapmas',
+    url: 'mongodb://siapmas:indonesia@siapmas-shard-00-00.hosnb.mongodb.net:27017,siapmas-shard-00-01.hosnb.mongodb.net:27017,siapmas-shard-00-02.hosnb.mongodb.net:27017/<dbname>?ssl=true&replicaSet=atlas-esomrw-shard-0&authSource=admin&retryWrites=true&w=majority',
+    ssl: true,
+    // url: 'mongodb://localhost:27017/siapmas',
   },
 
 
