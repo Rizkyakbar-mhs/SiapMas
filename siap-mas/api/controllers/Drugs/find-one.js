@@ -39,9 +39,8 @@ module.exports = {
   
   
     fn: async function ({Product}) {
-      var newProduct = Product;
       var newFindOneDrug = await Drugs.findOne({
-        Product
+        Product:Product.toLowerCase()
       });  
     }
   
