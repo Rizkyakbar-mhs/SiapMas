@@ -1,18 +1,24 @@
 <div id="signup" v-cloak>
   <div class="container-fluid pt-5 pb-5" v-if="!cloudSuccess">
-    <h1 class="text-center">Create an account</h1>
+    <h1 class="text-center">Create Acount</h1>
     <div style="max-width: 450px;" class="mx-auto" >
-      <p class="text-center">Let's get started! Becoming a member is free and only takes a few minutes.</p>
+      <p class="text-center">Welcome to SIAPMAS</p>
       <hr/>
       <ajax-form action="signup" :syncing.sync="syncing" :cloud-error.sync="cloudError" :form-errors.sync="formErrors" :form-data="formData" :form-rules="formRules" @submitted="submittedForm()">
         <div class="form-group">
-          <label for="full-name">Full name</label>
-          <input class="form-control" id="full-name" type="text"  :class="[formErrors.fullName ? 'is-invalid' : '']" v-model.trim="formData.fullName" placeholder="Sturgis P. Sturgeon" autocomplete="name" focus-first>
+          <label for="nip">NIP</label>
+          <input class="form-control" id="nip" type="text"  :class="[formErrors.nip ? 'is-invalid' : '']" v-model.trim="formData.nip" placeholder="NIP" autocomplete="name" focus-first>
+          <div class="invalid-feedback" v-if="formErrors.fullName">Please enter your NIP.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="full-name">Fullname</label>
+          <input class="form-control" id="full-name" type="text"  :class="[formErrors.fullName ? 'is-invalid' : '']" v-model.trim="formData.fullName" placeholder="Fullname" autocomplete="name">
           <div class="invalid-feedback" v-if="formErrors.fullName">Please enter your full name.</div>
         </div>
         <div class="form-group">
-          <label for="email-address">Email address</label>
-          <input class="form-control" id="email-address" type="email"  :class="[formErrors.emailAddress ? 'is-invalid' : '']" v-model.trim="formData.emailAddress" placeholder="sturgeon@example.com" autocomplete="email">
+          <label for="email-address">Email</label>
+          <input class="form-control" id="email-address" type="email"  :class="[formErrors.emailAddress ? 'is-invalid' : '']" v-model.trim="formData.emailAddress" placeholder="Email" autocomplete="email">
           <div class="invalid-feedback" v-if="formErrors.emailAddress">Please enter a valid email address.</div>
         </div>
         <div class="form-group">

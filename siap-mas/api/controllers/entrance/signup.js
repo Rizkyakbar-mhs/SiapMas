@@ -75,13 +75,8 @@ the account verification message.)`,
     var newUserRecord = await User.create(_.extend({
       fullName,
       emailAddress: newEmailAddress,
-      password: await sails.helpers.passwords.hashPassword(password),
-      tosAcceptedByIp: this.req.ip
-    }, sails.config.custom.verifyEmailAddresses? {
-      emailProofToken: await sails.helpers.strings.random('url-friendly'),
-      emailProofTokenExpiresAt: Date.now() + sails.config.custom.emailProofTokenTTL,
-      emailStatus: 'unconfirmed'
-    }:{}))
+      password: await sails.helpers.passwords.hashPassword(password),     
+    }))
     .intercept('E_UNIQUE', 'emailAlreadyInUse')
     .intercept({name: 'UsageError'}, 'invalid')
     .fetch();
