@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-import MyImage from './assets/dog.jpg';
+import index from "./home/index";
+import MyImage from "./assets/dog.jpg";
 import './index.css';
+import { Route,Link, Switch } from "react-router-dom";
 
-const App = () => {
+function App () {
   return (
     <div>
-        <div>Welcome to my-webpack-react-starter</div>
-        <img src={MyImage} />
+      <index />
     </div>
   );
 };
