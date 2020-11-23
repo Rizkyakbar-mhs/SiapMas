@@ -3,7 +3,7 @@ import MyImage from '../assets/dog.jpg';
 import { motion } from "framer-motion";
  function Index() {
      return(
-      <div className="home containt">
+      <div className="container">
       <motion.h1 animate={{ fontSize:50 }}>
           Welcome to SiapMas
       </motion.h1>
