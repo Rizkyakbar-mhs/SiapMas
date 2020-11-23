@@ -7,16 +7,19 @@ import styles from '../index.css';
 import { motion } from "framer-motion";
  function Index() {
      return(
+<div>
     <div>
-            <motion.img 
+        <motion.div 
+            className={styles.container}
+            initial={{ x:"130%",y:"40%",width:"25%",paddingBottom:"4%",paddingTop:"2%" }}>
+            {/* <motion.img 
                 src={LoginBox}
                 initial={{ width:"25%",height:"60%",x:"290%",y:"36%",scale:0 }} 
                 transition={{ duration:0.4 }} 
-                animate={{ scale:1 }} />
+                animate={{ scale:1 }} /> */}
             
         <motion.div 
             className={styles.UsernameLogo}
-            initial={{ x:"397%",y:"-200%",opacity:0 }}
             transition={{ delay:0.4, duration:0.4 }}
             animate={{ opacity:1 }}>
             <motion.img 
@@ -26,61 +29,57 @@ import { motion } from "framer-motion";
                 animate={{ opacity:1 }} />
         </motion.div>
 
-        <motion.input 
-            type="text" 
-            placeholder="USERNAME" 
-            className={styles.InputUsername} 
-            initial={{ x:"385%",y:"-630%",opacity:0 }}
-            transition={{ delay:0.8, duration:0.3 }}
-            animate={{ opacity:1 }}
-            />
-            
-        <motion.input 
-            type="text" 
-            placeholder="PASSWORD" 
-            className={styles.InputUsername} 
-            initial={{ x:"285%",y:"-450%",opacity:0 }}
-            transition={{ delay:1.1, duration:0.3 }}
-            animate={{ opacity:1 }}
-            />
-
-                <motion.img 
-                src={LogoUsername}  
-                initial={{ x:"2650%",y:"-783%", width:"2%",opacity:0 }}
+        <motion.div
+            initial={{ y:"10%",x:"10%" }} >
+            <motion.input 
+                type="text" 
+                placeholder="USERNAME" 
+                className={styles.InputUsername}
                 transition={{ delay:0.8, duration:0.3 }}
                 animate={{ opacity:1 }}
                 />
-
-                <motion.img 
-                src={LogoPassword}  
-                initial={{ x:"2550%",y:"-550%",width:"2%",opacity:0 }}
+                
+            <motion.input 
+                type="text" 
+                placeholder="PASSWORD" 
+                className={styles.InputUsername} 
                 transition={{ delay:1.1, duration:0.3 }}
                 animate={{ opacity:1 }}
                 />
-                <motion.input type="radio" 
-                value="lupa password"
-                    initial={{x:"3780%", y:"-830%"}}
-                />
-                <motion.p 
-                initial={{x:"76%", y:"-500%", marginLeft:"1%"}}
-                >
-                Remember me
-                </motion.p>
 
-                <motion.div
-                initial={{ x:"87%", y:"-598%" }}
-                >
-                <label>
+                <motion.img 
+                src={LogoUsername}  
+                transition={{ delay:0.8, duration:0.3 }}
+                initial={{ y:"-105%",width:"10%",x:"-120%"}}
+                animate={{ opacity:1 }}
+                />
+
+                <motion.img 
+                src={LogoPassword}
+                transition={{ delay:1.1, duration:0.3 }}
+                initial={{ x:"690%",y:"-105%",width:"10%" }}
+                animate={{ opacity:1 }}
+                />
+            </motion.div>
+
+                <motion.input 
+                type="radio" 
+                initial={{ marginLeft:"14%" }}
+                value="lupa password"
+                />Remember Me      
+
+                <motion.label initial={{ marginLeft:"5%" }}>
                 Lupa Password
-                </label>
-                </motion.div>
+                </motion.label>
 
                 <motion.input type="submit" 
                 value="LOGIN"
+                initial={{ marginLeft:"25%",marginTop:"7%" }}
                 className={styles.InputButton}
-                initial={{x:"590%", y:"-440%"}}
                 />
+        </motion.div>
     </div>
+</div>
      )}
 
  export default Index ;
