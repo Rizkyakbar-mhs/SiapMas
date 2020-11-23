@@ -27,4 +27,10 @@ Note:  Generators are usually run using the globally-installed `sails` CLI (comm
 <!-- 
     Sails Api
 sails generate model <name model>
-sails generate controller <name controller> -->
+sails generate controller <name controller> 
+
+    Search Contains
+    http://localhost:1337/models?where={"Product":{"contains":"a"}}
+
+
+-->
