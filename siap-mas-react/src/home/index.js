@@ -35,6 +35,7 @@ import { motion } from "framer-motion";
                 type="text" 
                 placeholder="USERNAME" 
                 className={styles.InputUsername}
+                initial={{ paddingBottom:"1%" }}
                 transition={{ delay:0.8, duration:0.3 }}
                 animate={{ opacity:1 }}
                 />
