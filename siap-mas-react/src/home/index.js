@@ -1,14 +1,14 @@
 import React from "react";
- import {Link} from "react-router-dom" ;
+import MyImage from '../assets/dog.jpg';
 
- function index() {
-     return
+ function Index() {
+     return(
       <div className="home containt">
       <h1>
           Welcome to SiapMas
       </h1>
-      <img src="../assets/dog.jpg" />
-      </div>
+      <img src={MyImage} />
+      </div>)
  }
 
- export default index ;
+ export default Index ;
