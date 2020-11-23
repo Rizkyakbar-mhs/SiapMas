@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
  function Index() {
      return(
       <div className={styles.container}>
-      <motion.h1 animate={{ fontSize:50 }} drag onDrag={ (e) => console.log(e.x,e.y) }>
-          Welcome to SiapMas
+      <motion.h1 animate={{ fontSize:50 }} drag onDrag={ (e) => console.log("x = " + Math.trunc(e.x) + "   " + "y = " + Math.trunc(e.y)) }>
       </motion.h1>
       {/* <img src={MyImage} /> */}
       </div>)
