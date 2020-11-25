@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
  function Index() {
      return(
         <motion.div 
-            className={styles.container}>
+            className={styles.container}
+            initial={{ scale:0 }}
+            animate={{ scale:1 }}
+            transition={{ duration:0.4 }}>
             {/* <motion.img 
                 src={LoginBox}
                 initial={{ width:"25%",height:"60%",x:"290%",y:"36%",scale:0 }} 
@@ -65,11 +68,11 @@ import { motion } from "framer-motion";
                 <motion.input 
                 type="radio" 
                 value="Remember me"
-                 transition={{delay:1.3,duration:0.4}}
+                transition={{delay:1.3,duration:0.4}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}
                 /><motion.label
-                 transition={{delay:1.3,duration:0.4}}
+                transition={{delay:1.3,duration:0.4}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}
                 >
@@ -78,7 +81,7 @@ import { motion } from "framer-motion";
 
 
                 <motion.label className={styles.LupaPasswordLink}
-                 transition={{delay:1.3,duration:0.4}}
+                transition={{delay:1.7,duration:0.4}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}
                 >
@@ -89,7 +92,7 @@ import { motion } from "framer-motion";
                 <motion.input type="submit" 
                 value="LOGIN"
                 className={styles.InputButton}
-                transition={{delay:1.8,duration:0.4}}
+                transition={{delay:2.1,duration:0.4}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}
                 />
