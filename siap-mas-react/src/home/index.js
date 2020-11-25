@@ -15,11 +15,13 @@ import { motion } from "framer-motion";
         <motion.div 
             className={styles.UsernameLogo}
             transition={{ delay:0.4, duration:0.4 }}
+            initial={{opacity:0}}
             animate={{ opacity:1 }}>
             <motion.img 
                 className={styles.UsernameLogoImg}
                 src={LogoUser} 
                 transition={{ delay:0.4, duration:0.4 }}
+                initial ={{opacity:0}}
                 animate={{ opacity:1 }} />
         </motion.div>
 
@@ -29,6 +31,7 @@ import { motion } from "framer-motion";
                 placeholder="USERNAME" 
                 className={styles.InputUsername}
                 transition={{ delay:0.8, duration:0.3 }}
+                initial={{opacity:0}}
                 animate={{ opacity:1 }}
                 />
 
@@ -47,6 +50,7 @@ import { motion } from "framer-motion";
                 placeholder="PASSWORD" 
                 className={styles.InputPassword}
                 transition={{ delay:1.1, duration:0.3 }}
+                initial={{opacity:0}}
                 animate={{ opacity:1 }}
                 />
 
@@ -60,7 +64,10 @@ import { motion } from "framer-motion";
         <motion.div className={styles.LupaPassword}>
                 <motion.input 
                 type="radio" 
-                value="lupa password"
+                value="Remember me"
+                 transition={{delay:1.5,duration:0.4}}
+                initial={{opacity:0}}
+                animate={{opacity:1}}
                 />Remember Me      
 
                 <motion.label className={styles.LupaPasswordLink}>
@@ -71,6 +78,9 @@ import { motion } from "framer-motion";
                 <motion.input type="submit" 
                 value="LOGIN"
                 className={styles.InputButton}
+                transition={{delay:1.5,duration:0.4}}
+                initial={{opacity:0}}
+                animate={{opacity:1}}
                 />
         </motion.div>
      )}
