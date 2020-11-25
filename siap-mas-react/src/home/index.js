@@ -3,11 +3,27 @@ import LogoUser from '../assets/LoginLogo.png';
 import styles from './home.css';
 import { motion } from "framer-motion";
  function Index() {
+
+    const s = 10;
+    const shadowColor = `rgb(142, 141, 141)`;
+
+
+    const click = {
+        up: {
+          x: -s * 1.5,
+          y: -s * 1.5,
+          boxShadow: `${s * 1.5}px ${s * 1.5}px 0 ${shadowColor}`
+        },
+        static: { x: -s, y: -s, boxShadow: `${s}px ${s}px 0 ${shadowColor}` },
+        down: { x: -3, y: -3, boxShadow: `3px 3px 0 ${shadowColor}` }
+      };
+
      return(
         <motion.div 
             className={styles.container}
             initial={{ scale:0 }}
-            animate={{ scale:1 }}
+            animate={{ scale:1, x: -s, y: -s, boxShadow: `${s}px ${s}px 0 ${shadowColor}` }}
+            whileHover={{ scale:1.02, x:"-1%", x: -s * 1.5, y: -s * 1.5, boxShadow: `${s * 1.5}px ${s * 1.5}px 0 ${shadowColor}` }}
             transition={{ duration:0.4 }}>
             {/* <motion.img 
                 src={LoginBox}
@@ -88,14 +104,21 @@ import { motion } from "framer-motion";
                 Forgot Password
                 </motion.label>
         </motion.div>
-
-                <motion.input type="submit" 
-                value="LOGIN"
-                className={styles.InputButton}
-                transition={{delay:2.1,duration:0.4}}
-                initial={{opacity:0}}
-                animate={{opacity:1}}
-                />
+                <motion.div 
+                    style={{ padding:0 }}
+                    animate={{ x: -s, y: -s, boxShadow: `${s}px ${s}px 0 ${shadowColor}` }}
+                    whileHover={{  x: -s * 1.5, y: -s * 1.5, boxShadow: `${s * 1.5}px ${s * 1.5}px 0 ${shadowColor}` }}
+                    whileTap={{ x: -3, y: -3, boxShadow: `3px 3px 0 ${shadowColor}` }}
+                    className={styles.containerInput}
+                    transition={{ boxShadow: { velocity: 0 }, default: { type: "spring" }}}>
+                    <motion.input type="submit" 
+                    className={styles.InputButton}
+                    value="LOGIN"
+                    transition={{delay:2.1,duration:0.4,}}
+                    initial={{ opacity:0, }}
+                    animate={{ opacity:1 }}
+                    />
+                </motion.div>
         </motion.div>
      )}
 
