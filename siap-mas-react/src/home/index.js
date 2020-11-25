@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
     const s = 10;
     const shadowColor = `rgb(142, 141, 141)`;
+    const [isActive, setActive] = useState(false);
 
 
     const click = {
@@ -21,6 +22,7 @@ import { motion } from "framer-motion";
      return(
         <motion.div 
             className={styles.container}
+            onHoverStart={() => setActive(true)}
             initial={{ scale:0 }}
             animate={{ scale:1, x: -s, y: -s, boxShadow: `${s}px ${s}px 0 ${shadowColor}` }}
             whileHover={{ scale:1.02, x:"-1%", x: -s * 1.5, y: -s * 1.5, boxShadow: `${s * 1.5}px ${s * 1.5}px 0 ${shadowColor}` }}
@@ -44,7 +46,8 @@ import { motion } from "framer-motion";
                 animate={{ opacity:1 }} />
         </motion.div>
 
-        <motion.div className={styles.BoxUsername} >
+        <motion.div className={styles.BoxUsername}
+                    whileHover={{ scale:1.1, }} >
             <motion.input 
                 type="text" 
                 placeholder="USERNAME" 
@@ -62,7 +65,8 @@ import { motion } from "framer-motion";
 
             </motion.div>
             
-        <motion.div>
+        <motion.div 
+                whileHover={{ scale:1.1 }}>
 
             <motion.input 
                 type="text" 
@@ -84,7 +88,8 @@ import { motion } from "framer-motion";
                 <motion.input 
                 type="radio" 
                 value="Remember me"
-                transition={{delay:1.3,duration:0.4}}
+                onTap={{ scale:1.1 }}
+                transition={{delay:1.3,duration:0.4, type:"spring", bounceDamping:100}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}
                 /><motion.label
@@ -104,21 +109,19 @@ import { motion } from "framer-motion";
                 Forgot Password
                 </motion.label>
         </motion.div>
-                <motion.div 
-                    style={{ padding:0 }}
-                    animate={{ x: -s, y: -s, boxShadow: `${s}px ${s}px 0 ${shadowColor}` }}
-                    whileHover={{  x: -s * 1.5, y: -s * 1.5, boxShadow: `${s * 1.5}px ${s * 1.5}px 0 ${shadowColor}` }}
-                    whileTap={{ x: -3, y: -3, boxShadow: `3px 3px 0 ${shadowColor}` }}
-                    className={styles.containerInput}
-                    transition={{ boxShadow: { velocity: 0 }, default: { type: "spring" }}}>
+        <motion.div 
+                initial={{ opacity:0 }}
+                style={{ padding:0 }}
+                animate={ isActive ? {opacity:1, x: -s, y: -s, boxShadow: `${s}px ${s}px 0 ${shadowColor}`} : {opacity:0} }
+                whileHover={{  x: -s * 1.5, y: -s * 1.5, boxShadow: `${s * 1.5}px ${s * 1.5}px 0 ${shadowColor}` }}
+                whileTap={{ x: -3, y: -3, boxShadow: `3px 3px 0 ${shadowColor}` }}
+                className={styles.containerInput}
+                transition={{ duration:0.4, boxShadow: { velocity: 0 }, default: { type: "spring" }}}>
                     <motion.input type="submit" 
                     className={styles.InputButton}
                     value="LOGIN"
-                    transition={{delay:2.1,duration:0.4,}}
-                    initial={{ opacity:0, }}
-                    animate={{ opacity:1 }}
                     />
-                </motion.div>
+        </motion.div>
         </motion.div>
      )}
 
