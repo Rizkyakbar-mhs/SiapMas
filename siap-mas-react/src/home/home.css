@@ -201,7 +201,7 @@ li span.active::before {
 .InputUsername {
     background-image: url("../assets/Username.png");
     background-size: 12%;
-    padding-right: 10px;
+    padding-right: 5px;
     background-position: right;
     background-position-y: center;
     background-position-x: auto;
@@ -211,6 +211,7 @@ li span.active::before {
     border-radius: 25px;
     padding-left: 10px;
     margin-top: 5%;
+    background-origin: content-box;
     width: 280px;
     height: 40px;
     background-color: #c6e0e4;
@@ -228,7 +229,7 @@ li span.active::before {
 .InputPassword {
     background-image: url("../assets/Password.png");
     background-size: 12%;
-    padding-right: 10px;
+    padding-right: 5px;
     background-position: right;
     background-position-y: center;
     background-position-x: auto;
@@ -237,6 +238,7 @@ li span.active::before {
     border-radius: 25px;
     padding-left: 10px;
     margin-left: 5%;
+    background-origin: content-box;
     margin-top: 5%;
     width: 280px;
     height: 40px;
