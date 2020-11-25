@@ -65,12 +65,23 @@ import { motion } from "framer-motion";
                 <motion.input 
                 type="radio" 
                 value="Remember me"
-                 transition={{delay:1.5,duration:0.4}}
+                 transition={{delay:1.3,duration:0.4}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}
-                />Remember Me      
+                /><motion.label
+                 transition={{delay:1.3,duration:0.4}}
+                initial={{opacity:0}}
+                animate={{opacity:1}}
+                >
+                Remember Me    
+                </motion.label>
 
-                <motion.label className={styles.LupaPasswordLink}>
+
+                <motion.label className={styles.LupaPasswordLink}
+                 transition={{delay:1.3,duration:0.4}}
+                initial={{opacity:0}}
+                animate={{opacity:1}}
+                >
                 Forgot Password
                 </motion.label>
         </motion.div>
@@ -78,7 +89,7 @@ import { motion } from "framer-motion";
                 <motion.input type="submit" 
                 value="LOGIN"
                 className={styles.InputButton}
-                transition={{delay:1.5,duration:0.4}}
+                transition={{delay:1.8,duration:0.4}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}
                 />
