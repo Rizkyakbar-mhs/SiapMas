@@ -31,6 +31,60 @@ body {
     overflow: hidden;
 }
 
+@media only screen and (max-width:1920px) {
+    body {
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width:1680px) {
+    body {
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width:1600px) {
+    body {
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width:1366px) {
+    body {
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width:1360px) {
+    body {
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width:1280px) {
+    body {
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    body {
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    body {
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    body {
+        background-size: cover;
+    }
+}
+
 button {
     color: white;
     padding: 10px 30px;
