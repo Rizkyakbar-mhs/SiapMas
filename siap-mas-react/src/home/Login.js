@@ -2,7 +2,7 @@ import React,{ useState } from "react";
 import LogoUser from '../assets/LoginLogo.png';
 import styles from './home.css';
 import { motion } from "framer-motion";
- function Index() {
+ const HomeIndex = () => {
 
     const s = 10;
     const shadowColor = `rgb(142, 141, 141)`;
@@ -127,4 +127,4 @@ import { motion } from "framer-motion";
         </motion.div>
      )}
 
- export default Index ;
+ export default HomeIndex ;

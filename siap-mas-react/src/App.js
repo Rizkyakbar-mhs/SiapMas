@@ -1,22 +1,21 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Index from "./home/index";
-import Home from "./home/home";
-import { BrowserRouter as Router,Link, Switch, Router } from "react-router-dom";
+import React, { Component } from "react";
+import Login from "./home/Login";
+import Dashboard from './dashboard/Dashboard';
+import { BrowserRouter,Link, Switch, Route } from "react-router-dom";
 
-function App () {
-  return (
-    <Router>
-    <switch>
-      <Route path="/home/index" home={Index}/>
-      <Route path="/Home" home={Home}/>
-
-    </switch>
-    </Router>
-
-  );
-};
-
+class App extends Component {
+  render() {
+    return(
+    <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Login}/>
+          <Route path="/Home"  component={Dashboard}/>
+        </Switch>
+    </BrowserRouter>
+    )
+  }
+}
 
 
-ReactDOM.render(<App />, document.getElementById("root"));
+
+export default App;
