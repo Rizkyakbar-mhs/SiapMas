@@ -1,9 +1,9 @@
 import React,{ useState } from "react";
 import LogoUser from '../assets/LoginLogo.png';
-import styles from './home.css';
+import styles from './Home.css';
 import { motion } from "framer-motion";
+import LoginApi from './LoginApi';
  const HomeIndex = () => {
-
     const s = 10;
     const shadowColor = `rgb(142, 141, 141)`;
     const [isActive, setActive] = useState(false);
