@@ -46,7 +46,7 @@ import { motion } from "framer-motion";
                 initial ={{opacity:0}}
                 animate={{ opacity:1 }} />
         </motion.div>
-
+        <form>
         <motion.div className={styles.BoxUsername}
                     whileHover={{ scale:1.1, }} >
             <motion.input 
@@ -123,6 +123,7 @@ import { motion } from "framer-motion";
                     value="LOGIN"
                     />
         </motion.div>
+        </form>
         </motion.div>
      )}
 
