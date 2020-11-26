@@ -32,7 +32,7 @@ module.exports = {
     },
 
     BirthDate: {
-      type: 'date',
+      type: 'string',
       required: true,
       maxLength: 50
     },

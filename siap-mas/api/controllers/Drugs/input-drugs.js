@@ -95,16 +95,5 @@ module.exports = {
   
     }
 
-    async delete(req, res){
-    try {
-      var results = await Drugs.destroy({
-        id: req.params.id
-      });
-      return res.ok(results);
-    } catch (err) {
-      return res.serverError(err);
-    }
-  }
-  
-  };
+  } ;
   
