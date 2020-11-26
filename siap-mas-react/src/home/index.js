@@ -23,6 +23,7 @@ import { motion } from "framer-motion";
         <motion.div 
             className={styles.container}
             onHoverStart={() => setActive(true)}
+            onHoverEnd={() => setActive(false)}
             initial={{ scale:0 }}
             animate={{ scale:1, x: -s, y: -s, boxShadow: `${s}px ${s}px 0 ${shadowColor}` }}
             whileHover={{ scale:1.02, x:"-1%", x: -s * 1.5, y: -s * 1.5, boxShadow: `${s * 1.5}px ${s * 1.5}px 0 ${shadowColor}` }}
@@ -86,13 +87,13 @@ import { motion } from "framer-motion";
 
         <motion.div className={styles.LupaPassword}>
                 <motion.input 
-                type="radio" 
+                type="checkbox" 
                 value="Remember me"
-                onTap={{ scale:1.1 }}
                 transition={{delay:1.3,duration:0.4, type:"spring", bounceDamping:100}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}
-                /><motion.label
+                />
+                <motion.label
                 transition={{delay:1.3,duration:0.4}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}
