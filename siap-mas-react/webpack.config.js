@@ -22,7 +22,7 @@ module.exports = {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/,
-                options: {presets: ["@babel/env", "@babel/react"]}
+                options: {presets: ["@babel/env", "@babel/react",{'plugins':['@babel/plugin-proposal-class-properties']}]}
             },
             {
                 test: /\.css$/,
