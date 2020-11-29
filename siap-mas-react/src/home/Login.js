@@ -2,6 +2,7 @@ import React,{ useState } from "react";
 import LogoUser from '../assets/LoginLogo.png';
 import './Home.css';
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
  const HomeIndex = () => {
     const s = 10;
     const shadowColor = `rgb(142, 141, 141)`;
@@ -129,10 +130,12 @@ import { motion } from "framer-motion";
                 whileTap={{ x: -3, y: -3, boxShadow: `3px 3px 0 ${shadowColor}` }}
                 className="containerInput"
                 transition={{ duration:0.4, boxShadow: { velocity: 0 }, default: { type: "spring" }}}>
+                  <Link to="/home"> 
                     <motion.input type="submit" 
                     className="InputButton"
                     value="LOGIN"
                     />
+                  </Link>
         </motion.div>
         </form>
         </motion.div>

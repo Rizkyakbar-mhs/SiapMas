@@ -309,7 +309,7 @@ li span.active::before {
 }
 
 .containerInput {
-
+    border: 1px solid rgb(198, 224, 228);
     width: 200px;
     height: 35px;
     background: rgb(0, 212, 255);
@@ -321,7 +321,7 @@ li span.active::before {
 }
 
 .InputButton {
-    border: 1px solid rgb(198, 224, 228);
+    border: none;
     border-radius: 25px;
     background: rgb(0, 212, 255);
     background: linear-gradient(156deg, rgba(0, 212, 255, 1) 0%, rgba(22, 122, 220, 1) 58%, rgba(43, 34, 186, 1) 100%);
