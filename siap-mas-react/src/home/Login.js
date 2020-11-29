@@ -1,32 +1,31 @@
 import React,{ useState } from "react";
 import LogoUser from '../assets/LoginLogo.png';
-import styles from './Home.css';
+import './Home.css';
 import { motion } from "framer-motion";
-import LoginApi from './LoginApi';
  const HomeIndex = () => {
     const s = 10;
     const shadowColor = `rgb(142, 141, 141)`;
     const [isActive, setActive] = useState(false);
 
 
-    const click = {
-        up: {
-          x: -s * 1.5,
-          y: -s * 1.5,
-          boxShadow: `${s * 1.5}px ${s * 1.5}px 0 ${shadowColor}`
-        },
-        static: { x: -s, y: -s, boxShadow: `${s}px ${s}px 0 ${shadowColor}` },
-        down: { x: -3, y: -3, boxShadow: `3px 3px 0 ${shadowColor}` }
-      };
+    // const click = {
+    //     up: {
+    //       x: -s * 1.5,
+    //       y: -s * 1.5,
+    //       boxShadow: `${s * 1.5}px ${s * 1.5}px 0 ${shadowColor}`
+    //     },
+    //     static: { x: -s, y: -s, boxShadow: `${s}px ${s}px 0 ${shadowColor}` },
+    //     down: { x: -3, y: -3, boxShadow: `3px 3px 0 ${shadowColor}` }
+    //   };
 
      return(
         <motion.div 
-            className={styles.container}
+            className="container"
             onHoverStart={() => setActive(true)}
             onHoverEnd={() => setActive(false)}
             initial={{ scale:0 }}
             animate={{ scale:1, x: -s, y: -s, boxShadow: `${s}px ${s}px 0 ${shadowColor}` }}
-            whileHover={{ scale:1.02, x:"-1%", x: -s * 1.5, y: -s * 1.5, boxShadow: `${s * 1.5}px ${s * 1.5}px 0 ${shadowColor}` }}
+            whileHover={{ scale:1.02, x: -12 * 1.5, y: -s * 1.5, boxShadow: `${s * 1.5}px ${s * 1.5}px 0 ${shadowColor}` }}
             transition={{ duration:0.4 }}>
             {/* <motion.img 
                 src={LoginBox}
@@ -35,24 +34,24 @@ import LoginApi from './LoginApi';
                 animate={{ scale:1 }} /> */}
             
         <motion.div 
-            className={styles.UsernameLogo}
+            className="UsernameLogo"
             transition={{ delay:0.4, duration:0.4 }}
             initial={{opacity:0}}
             animate={{ opacity:1 }}>
             <motion.img 
-                className={styles.UsernameLogoImg}
+                className="UsernameLogoImg"
                 src={LogoUser} 
                 transition={{ delay:0.4, duration:0.4 }}
                 initial ={{opacity:0}}
                 animate={{ opacity:1 }} />
         </motion.div>
         <form>
-        <motion.div className={styles.BoxUsername}
+        <motion.div className="BoxUsername"
                     whileHover={{ scale:1.1, }} >
             <motion.input 
                 type="text" 
                 placeholder="USERNAME" 
-                className={styles.InputUsername}
+                className="InputUsername"
                 transition={{ delay:0.8, duration:0.3 }}
                 initial={{opacity:0}}
                 animate={{ opacity:1 }}
@@ -72,7 +71,7 @@ import LoginApi from './LoginApi';
             <motion.input 
                 type="text" 
                 placeholder="PASSWORD" 
-                className={styles.InputPassword}
+                className="InputPassword"
                 transition={{ delay:1.1, duration:0.3 }}
                 initial={{opacity:0}}
                 animate={{ opacity:1 }}
@@ -85,7 +84,7 @@ import LoginApi from './LoginApi';
                 /> */}
         </motion.div>
 
-        <motion.div className={styles.LupaPassword}>
+        <motion.div className="LupaPassword">
                 <motion.input 
                 type="checkbox" 
                 value="Remember me"
@@ -102,7 +101,7 @@ import LoginApi from './LoginApi';
                 </motion.label>
 
 
-                <motion.label className={styles.LupaPasswordLink}
+                <motion.label className="LupaPasswordLink"
                 transition={{delay:1.7,duration:0.4}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}
@@ -116,10 +115,10 @@ import LoginApi from './LoginApi';
                 animate={ isActive ? {opacity:1, x: -s, y: -s, boxShadow: `${s}px ${s}px 0 ${shadowColor}`} : {opacity:0} }
                 whileHover={{  x: -s * 1.5, y: -s * 1.5, boxShadow: `${s * 1.5}px ${s * 1.5}px 0 ${shadowColor}` }}
                 whileTap={{ x: -3, y: -3, boxShadow: `3px 3px 0 ${shadowColor}` }}
-                className={styles.containerInput}
+                className="containerInput"
                 transition={{ duration:0.4, boxShadow: { velocity: 0 }, default: { type: "spring" }}}>
                     <motion.input type="submit" 
-                    className={styles.InputButton}
+                    className="InputButton"
                     value="LOGIN"
                     />
         </motion.div>

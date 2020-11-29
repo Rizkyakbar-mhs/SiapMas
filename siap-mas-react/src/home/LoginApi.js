@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import baseUrl from '../config/Base';
 
-export default class LogiApi extends Component{
+export default class LoginApi extends Component{
     
     constructor(props) {
         super(props);
