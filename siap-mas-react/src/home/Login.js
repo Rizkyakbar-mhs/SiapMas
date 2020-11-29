@@ -85,20 +85,32 @@ import { motion } from "framer-motion";
         </motion.div>
 
         <motion.div className="LupaPassword">
-                <motion.input 
+        <input className="inp-cbx" id="cbx" type="checkbox" style={{display:"none"}} />
+            <label className="cbx" htmlFor="cbx">
+                <span>
+                    <svg width="12px" height="9px" viewBox="0 0 12 9">
+                        <polyline points="1 5 4 8 11 1">
+                        </polyline>
+                    </svg>
+                </span>
+                <span>
+                    Remember Me
+                </span>
+            </label>
+                    {/* <motion.input 
                 type="checkbox" 
                 value="Remember me"
                 transition={{delay:1.3,duration:0.4, type:"spring", bounceDamping:100}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}
-                />
+                {/* /> 
                 <motion.label
                 transition={{delay:1.3,duration:0.4}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}
                 >
                 Remember Me    
-                </motion.label>
+                </motion.label> */}
 
 
                 <motion.label className="LupaPasswordLink"

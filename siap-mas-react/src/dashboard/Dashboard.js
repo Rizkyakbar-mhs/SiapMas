@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
+import "./index.css";
 
 class Dashboard extends Component {
+    componentDidMount(){
+        document.title = "SIAPMAS - HOME"
+    }
     render() {
         return(
             <div>

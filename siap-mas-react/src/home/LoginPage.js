@@ -5,6 +5,9 @@ import LoginApi from './LoginApi';
 
 class LoginPage extends Component {
 
+    componentDidMount() {
+        document.title = "SIAPMAS - MAIN"
+    }
     render() {
         return(   
             <div>
