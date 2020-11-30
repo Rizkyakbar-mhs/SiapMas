@@ -5,17 +5,13 @@ function Dash () {
 return(
 <div>
 
-    <div>
         <div className="Polygon-Warp">
             <div className="Polygon">
             </div>
         </div>
-    </div>  
     
-    <div className="Polygon-1">
-        <div className="Polygon-Warp">
-            <div className="Polygon">
-            </div>
+        <div className="Polygon-Warp Polygon-1">
+            <div className="Polygon Polygon-Warp Polygon-1">
         </div>
     </div>
 </div>
