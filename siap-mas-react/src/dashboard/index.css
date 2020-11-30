@@ -6,29 +6,34 @@
 
 }
 
+.Polygon-0 {
+    margin-left: 0;
+    margin-top: 30px;
+}
+
 .Polygon-1 {
-    margin-left: 230px;
-    margin-top: -75px !important;
+    margin-left: 180px;
+    margin-top: -55px !important;
 }
 
 .Polygon-2 {
-    margin-left: 460px;
-    margin-top: -150px !important;
+    margin-left: 360px;
+    margin-top: -115px !important;
 }
 
 .Polygon-3 {
-    margin-left: -10px;
-    margin-top: -290px !important;
+    margin-left: -3px;
+    margin-top: -223px !important;
 }
 
 .Polygon-4 {
-    margin-left: 230px;
-    margin-top: -150px !important;
+    margin-left: 177px;
+    margin-top: -109px !important;
 }
 
 .Polygon-5 {
-    margin-left: -10px;
-    margin-top: -150px !important;
+    margin-left: -6px;
+    margin-top: -118px !important;
 }
 
 .Polygon-Warp {
@@ -41,6 +46,6 @@
     background-position: center;
     margin-left: 100px;
     display: flex;
-    width: 350px;
-    height: 266px;
+    width: 265px;
+    height: 196px;
 }

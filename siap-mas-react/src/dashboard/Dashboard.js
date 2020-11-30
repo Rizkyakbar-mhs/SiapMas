@@ -1,15 +1,16 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import { ReactComponent as Profile } from '../assets/Profile_Logo.svg';
 import './index.css';
 function Dash () {
 return(
+    <div>
 <div>
-        
-        <div className="Polygon-Warp ">
+        <div className="Polygon-Warp Polygon-0 ">
             <div className="Polygon">
+            <Profile style={{ margin:"auto" }} />
             </div>
         </div>
-
      
         <div className="Polygon-Warp Polygon-1">
             <div className="Polygon Polygon-Warp Polygon-1">
@@ -33,8 +34,8 @@ return(
             <div className="Polygon">
             </div>
         </div>
-
         
+</div>
 </div>
 )
 }
