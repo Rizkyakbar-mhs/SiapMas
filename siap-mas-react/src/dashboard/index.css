@@ -11,6 +11,26 @@
     margin-top: -75px !important;
 }
 
+.Polygon-2 {
+    margin-left: 460px;
+    margin-top: -150px !important;
+}
+
+.Polygon-3 {
+    margin-left: -10px;
+    margin-top: -290px !important;
+}
+
+.Polygon-4 {
+    margin-left: 230px;
+    margin-top: -150px !important;
+}
+
+.Polygon-5 {
+    margin-left: -10px;
+    margin-top: -150px !important;
+}
+
 .Polygon-Warp {
     filter: drop-shadow(-6px 10px 10px rgb(142, 141, 141));
 }
