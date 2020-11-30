@@ -4,6 +4,9 @@ function Dash () {
 return(
     <div>
         <Polygon />
+        <div style={{ marginRight:"30%" }}>
+        <Polygon />
+        </div>
     </div>
 )
 }

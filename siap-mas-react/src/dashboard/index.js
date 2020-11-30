@@ -7,6 +7,10 @@ class Dashboard extends Component {
         document.title = "SIAPMAS - HOME";
         document.body.className = "backgroundHome";
     }
+
+    componentWillUnmount(){
+        document.body.className = "";
+    }
     render() {
         return(
             <div>
