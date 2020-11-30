@@ -6,6 +6,10 @@
 
 }
 
+.Polygon-1 {
+    margin-left: 50%;
+}
+
 .Polygon-Warp {
     filter: drop-shadow(-6px 10px 10px rgb(142, 141, 141));
 }
