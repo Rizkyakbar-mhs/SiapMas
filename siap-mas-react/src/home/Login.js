@@ -85,11 +85,7 @@ import { Link } from "react-router-dom";
                 /> */}
         </motion.div>
 
-        <motion.div 
-                className="LupaPassword"
-                transition={{delay:1.7,duration:0.4}}
-                initial={{opacity:0}}
-                animate={{opacity:1}}>
+        <motion.div className="LupaPassword">
         <input className="inp-cbx" id="cbx" type="checkbox" style={{display:"none"}} />
             <label className="cbx" htmlFor="cbx">
                 <span>
@@ -119,6 +115,9 @@ import { Link } from "react-router-dom";
 
 
                 <motion.label className="LupaPasswordLink"
+                transition={{delay:1.7,duration:0.4}}
+                initial={{opacity:0}}
+                animate={{opacity:1}}
                 >
                 Forgot Password
                 </motion.label>
