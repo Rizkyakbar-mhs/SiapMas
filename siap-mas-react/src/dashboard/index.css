@@ -3,10 +3,19 @@
     background-size: cover;
     overflow: hidden;
 
-    
+
 }
 
-.img{
-    margin-right: 40%;
+.Polygon-Warp {
+    filter: drop-shadow(-6px 10px 10px rgb(142, 141, 141));
 }
 
+.Polygon {
+    clip-path: polygon(30% 0%, 75% 0%, 96% 50%, 75% 100%, 30% 100%, 8% 50%);
+    background-color: #eeeeee;
+    background-position: center;
+    margin-left: 100px;
+    display: flex;
+    width: 350px;
+    height: 266px;
+}

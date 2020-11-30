@@ -1,19 +1,18 @@
 import React from 'react';
-import Polygon from '../assets/Base_Icon.png';
 import { motion } from "framer-motion";
 import './index.css';
+import Poly from "../assets/Base_Icon.png";
 function Dash () {
 return(
-    
-    <div>
-        <img src={Polygon} 
-            className="img"
-            
-        />
-    </div>    
-        
-            
-        
+<div>
+    <div style={{ marginTop:"10%"}}>
+        <div className="Polygon-Warp">
+            <div className="Polygon">
+
+            </div>
+        </div>
+    </div>  
+</div>
 )
 }
 
