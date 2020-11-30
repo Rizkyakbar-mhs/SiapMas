@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import LoginPage from "./home/LoginPage";
-import Dashboard from './dashboard/Dashboard';
+import Dashboard from './dashboard/index';
 import { BrowserRouter,Link, Switch, Route } from "react-router-dom";
 
 class App extends Component {
