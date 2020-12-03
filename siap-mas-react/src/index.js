@@ -2,14 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createStore } from 'redux';
+import { createStore,applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import RootReducer from './store/reducers/RootReducer'
+import thunk from 'redux-thunk'
 
-  const store = createStore(RootReducer);
+  const store = createStore(RootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
-  <Provider store={ store } >
+  <Provider store={store} >
     <App />
   </Provider>,
   document.getElementById('root')

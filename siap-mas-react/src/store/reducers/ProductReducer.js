@@ -7,7 +7,11 @@ const initState = {
 }
 
 const ProductReducer = (state = initState, action) => {
-    return state
+    switch (action.type) {
+        case 'CREATE_PRODUCT':
+                console.log('created Product', action.product)
+    }
+    return state;
 }
 
 export default ProductReducer;
