@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import "./index.css";
+import { connect } from 'react-redux';
 import Dash from './Dashboard';
 
 class Dashboard extends Component {
@@ -12,6 +13,7 @@ class Dashboard extends Component {
         document.body.className = "";
     }
     render() {
+            console.log(this.props);
         return(
             <div>
                 <Dash />
@@ -20,4 +22,11 @@ class Dashboard extends Component {
     }
 }
 
-export default Dashboard;
+
+const mapStateToProps = (state) => {
+    return {
+        products: state.product.products
+    }
+   }
+
+export default connect(mapStateToProps)(Dashboard);
