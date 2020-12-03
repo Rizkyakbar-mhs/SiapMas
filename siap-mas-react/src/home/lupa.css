@@ -216,6 +216,7 @@ li span.active::before {
     background: rgb(0, 212, 255);
     background: linear-gradient(156deg, rgba(0, 212, 255, 1) 0%, rgba(22, 122, 220, 1) 58%, rgba(43, 34, 186, 1) 100%);
     border-radius: 25px;
+    margin-top: 42%;
     display: inline-block;
     margin-left: 20%;
 }

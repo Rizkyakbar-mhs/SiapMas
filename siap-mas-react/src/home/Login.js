@@ -113,7 +113,7 @@ import { Link } from "react-router-dom";
                 Remember Me    
                 </motion.label> */}
 
-
+            <Link to='/LupaPassword'>
                 <motion.label className="LupaPasswordLink"
                 transition={{delay:1.7,duration:0.4}}
                 initial={{opacity:0}}
@@ -121,6 +121,7 @@ import { Link } from "react-router-dom";
                 >
                 Forgot Password
                 </motion.label>
+            </Link>
         </motion.div>
         <motion.div 
                 initial={{ opacity:0 }}

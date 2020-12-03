@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { Component } from 'react'
 import LogoUser from '../assets/LoginLogo.png';
 import './lupa.css';
 import { motion } from "framer-motion";
@@ -46,7 +46,7 @@ export default class LupaPass extends Component {
                 animate={{opacity:1, x: -s, y: -s, boxShadow: `${s}px ${s}px 0 ${shadowColor}`}}
                 whileHover={{  x: -s * 1.5, y: -s * 1.5, boxShadow: `${s * 1.5}px ${s * 1.5}px 0 ${shadowColor}` }}
                 whileTap={{ x: -3, y: -3, boxShadow: `3px 3px 0 ${shadowColor}` }}
-                className="containerInput"
+                className="containerInput1"
                 transition={{ duration:0.4, boxShadow: { velocity: 0 }, default: { type: "spring" }}}>
         <motion.input type="submit" 
                     className="InputButton"
