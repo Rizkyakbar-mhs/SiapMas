@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import LoginPage from "./home/LoginPage";
+import Login from "./home/Login";
 import Dashboard from './dashboard/index';
 import { BrowserRouter,Link, Switch, Route } from "react-router-dom";
 import LupaPassword from './home/LupaPass';
@@ -8,7 +8,7 @@ class App extends Component {
     return (
         <BrowserRouter>
           <Switch>
-            <Route exact path="/" component={LoginPage}/>
+            <Route exact path="/" component={Login}/>
             <Route path="/Home"  component={Dashboard}/>
             <Route path="/LupaPassword" component={LupaPassword} />
           </Switch>

@@ -1,8 +1,16 @@
-const Login = (product) => {
-    return (dispatch, getState) => {
-        // make async to call database
-        dispatch({ type: 'CREATE_PRODUCT', product });
+export const signIn = (credentials) => {
+    return (dispatch, getState, {getFirebase}) => {
+        const firebase = getFirebase();
+
+        firebase.auth().signInWithEmailAndPassword(
+            credentials.email,
+            credentials.password
+        ).then(() => {
+            dispatch({ type: 'LOGIN_SUCCESS' })
+        }).catch((error) => {
+            dispatch({ type: 'LOGIN_FAILED', error })
+        });
     }
 };
 
-export default createProduct
+export default signIn

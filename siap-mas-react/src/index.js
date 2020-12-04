@@ -2,12 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createStore,applyMiddleware } from 'redux';
+import { createStore,applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 import RootReducer from './store/reducers/RootReducer'
 import thunk from 'redux-thunk'
+import firebaseConfig from './config/FbConfig'
+import { reactReduxFirebase, getFirebase } from 'react-redux-firebase';
+import { reduxFirestore, getFirestore } from 'redux-firestore';
 
-  const store = createStore(RootReducer, applyMiddleware(thunk));
+  const store = createStore(RootReducer,
+    compose(
+      applyMiddleware(thunk.withExtraArgument({getFirebase, getFirestore})),
+      reactReduxFirebase(firebaseConfig), // redux binding for firebase
+      reduxFirestore(firebaseConfig) // redux bindings for firestore
+    )
+  );
 
 ReactDOM.render(
   <Provider store={store} >
