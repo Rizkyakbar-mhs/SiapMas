@@ -28,6 +28,7 @@ class Login extends Component {
     render(){
         const s = 10;
         const shadowColor = `rgb(142, 141, 141)`;
+        const { authError } = this.props;
     
     
         // const click = {
@@ -164,6 +165,7 @@ class Login extends Component {
                         />
                       </Link>
             </motion.div>
+            <div> { authError ? <p style={{ color:"red" }}>{ authError }</p> : null }</div>
             </form>
             </motion.div>
          )
@@ -176,4 +178,11 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
- export default connect(null,mapDispatchToProps)(Login) ;
+const mapStateToProps = (state) => {
+    console.log(state);
+    return {
+        authError: state.auth.authError
+    }
+}
+
+ export default connect(mapStateToProps,mapDispatchToProps)(Login) ;
