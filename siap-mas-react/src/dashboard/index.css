@@ -13,15 +13,17 @@
 
 .Polygon-1 {
     margin-left: 180px;
-    margin-top: -55px !important; 
+    margin-top: -55px !important;
 }
 
 .Polygon-1-Img {
-    background: url("../assets/ico/Tambah.svg") no-repeat ;
+    background: url("../assets/ico/tambah\ karyawan.png") no-repeat center;
     background-size: cover;
 }
+
 .Polygon-2-Img {
-    
+    background: url("../assets/ico/Profil.png") no-repeat center;
+    background-size: cover;
 }
 
 .Polygon-2 {

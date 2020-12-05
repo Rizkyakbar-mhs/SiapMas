@@ -6,7 +6,7 @@ return(
     <div>
 <div>
         <div className="Polygon-Warp Polygon-0 ">
-            <div className="Polygon">
+            <div className="Polygon Polygon-2-Img">
             </div>
         </div>
      
