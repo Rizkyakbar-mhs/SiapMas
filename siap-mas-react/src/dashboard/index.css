@@ -17,13 +17,53 @@
 }
 
 .Polygon-1-Img {
-    background: url("../assets/ico/tambah\ karyawan.png") no-repeat center;
-    background-size: cover;
+    background: url("../assets/ico/Tambah.png") no-repeat center;
+    background-size: contain;
+    width: 265px;
+    height: 200px;
+    margin-right: -11px;
+    margin-top: -7px;
 }
 
 .Polygon-2-Img {
     background: url("../assets/ico/Profil.png") no-repeat center;
-    background-size: cover;
+    background-size: contain;
+    width: 265px;
+    height: 200px;
+    margin-right: -9px;
+    margin-top: -7px;
+}
+.Polygon-3-Img {
+    background: url("../assets/ico/laporan.png") no-repeat center;
+    background-size: contain;
+    width: 265px;
+    height: 200px;
+    margin-right: -11px;
+    margin-top: -6px;
+}
+.Polygon-4-Img {
+    background: url("../assets/ico/obat.png") no-repeat center;
+    background-size: contain;
+    width: 265px;
+    height: 200px;
+    margin-right: -11px;
+    margin-top: -6px;
+}
+.Polygon-5-Img {
+    background: url("../assets/ico/about.png") no-repeat center;
+    background-size: contain;
+    width: 265px;
+    height: 200px;
+    margin-right: -10px;
+    margin-top: -7px;
+}
+.Polygon-6-Img {
+    background: url("../assets/ico/Logout.png") no-repeat center;
+    background-size: contain;
+    width: 265px;
+    height: 200px;
+    margin-right: -10px;
+    margin-top: -7px;
 }
 
 .Polygon-2 {
