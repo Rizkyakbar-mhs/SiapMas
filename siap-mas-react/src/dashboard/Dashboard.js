@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { ReactComponent as Profile } from '../assets/Profile_Logo.svg';
-import './index.css';
+import { ReactComponent as Karyawan } from '../assets/ico/Tambah.svg';
+import './index.css';   
 function Dash () {
 return(
     <div>
@@ -13,7 +14,7 @@ return(
         </div>
      
         <div className="Polygon-Warp Polygon-1">
-            <div className="Polygon Polygon-Warp Polygon-1">
+            <div className="Polygon Polygon-Warp Polygon-1 Polygon-1-Img">
         </div>
     </div>
 

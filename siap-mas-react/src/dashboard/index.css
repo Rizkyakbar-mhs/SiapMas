@@ -13,7 +13,12 @@
 
 .Polygon-1 {
     margin-left: 180px;
-    margin-top: -55px !important;
+    margin-top: -55px !important; 
+}
+
+.Polygon-1-Img {
+    background: url("../assets/ico/Tambah.svg") no-repeat ;
+    background-size: cover;
 }
 
 .Polygon-2 {
