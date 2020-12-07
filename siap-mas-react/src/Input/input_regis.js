@@ -1,8 +1,31 @@
 import React,{ Component } from 'react';
 import { motion } from "framer-motion";
 import './input.css';   
+import {connect} from 'react-redux'
+import {SignUp} from '../store/actions/SignUp'
 
 class Inpt extends Component {
+    state ={
+        Nip:'',
+        nama:'',
+        hp:'',
+        email:'',
+        password:'',
+        konfirm:'',
+        Alamat:'',
+        
+
+    }
+    handleChange = (e) =>{
+this.setState({
+[e.target.id]: e.target.value
+})
+}
+handleSubmit = (e) => {
+    e.preventDefault();
+    this.props.SignUp(this.state);
+    console.log(this.state);
+}
 
     componentDidMount(){
         document.title = "SIAPMAS - OBAT";
@@ -10,13 +33,7 @@ class Inpt extends Component {
     }
     render() {
         return(
-            <Input />
-        )
-    }
-}
-function Input () {
-return(
-    <div>
+            <div>
 <div>
         
      <div className="container-form">
@@ -26,6 +43,7 @@ return(
                     type="text" 
                     placeholder="Masukkan Nip" 
                     id="Nip"
+                    onChange={this.handleChange}
                     className="InputNip"
                     transition={{delay:0.5 ,duration:0.5}}
                     initial={{scale:0}}
@@ -36,7 +54,8 @@ return(
                     <motion.input 
                     type="text" 
                     placeholder="Masukkan Nama" 
-                    id="Password"
+                    id="nama"
+                    onChange={this.handleChange}
                     className="InputPasswords"
                     transition={{delay:0.5 ,duration:0.5}}
                     initial={{scale:0}}
@@ -47,8 +66,9 @@ return(
                     <motion.input
                     
                     placeholder="No Hp" 
-                    id="Konfirmasi"
+                    id="hp"
                     className="InputKonfirm"
+                    onChange={this.handleChange}
                     transition={{delay:0.7 ,duration:0.5}}
                     initial={{scale:0}}
                         animate={{scale:1}}
@@ -59,8 +79,9 @@ return(
                     <motion.input 
                     type="text" 
                     placeholder="Masukkan Email" 
-                    id="Nama"
+                    id="email"
                     className="InputNama"
+                    onChange={this.handleChange}
                     transition={{delay:0.7 ,duration:0.5}}
                     initial={{scale:0}}
                         animate={{scale:1}}
@@ -71,8 +92,9 @@ return(
                     <motion.input 
                     type="text" 
                     placeholder="Konfirmasi Password" 
-                    id="Email"
+                    id="konfirm"
                     className="InputEmail"
+                    onChange={this.handleChange}
                     transition={{delay:1 ,duration:0.5}}
                     initial={{scale:0}}
                         animate={{scale:1}}
@@ -82,8 +104,9 @@ return(
                     <motion.input 
                     type="text" 
                     placeholder="Masukkan Password" 
-                    id="Alamat"
+                    id="password"
                     className="InputAlamat"
+                    onChange={this.handleChange}
                     transition={{delay:1 ,duration:0.5}}
                     initial={{scale:0}}
                         animate={{scale:1}}
@@ -93,8 +116,9 @@ return(
                     <motion.textarea 
                     type="text" 
                     placeholder="Alamat" 
-                    id="Nomer_hp"
+                    id="Alamat"
                     className="InputHp"
+                    onChange={this.handleChange}
                     transition={{delay:1.2 ,duration:0.5}}
                         initial={{scale:0}}
                         animate={{scale:1}}
@@ -102,10 +126,11 @@ return(
                     </div>
                     <div className="div5">
                     <motion.input type="submit" 
+                    onClick={this.handleSubmit}
                     transition={{delay:1.2 ,duration:0.5}}
                     initial={{scale:0}}
                     animate={{scale:1}}
-                    whileTap={{opacity:"0"}}
+                    whileTap={{opacity:0}}
                         value="Daftar"
                         className="Inputtombol"/>
                     </div>
@@ -119,7 +144,14 @@ return(
         
 </div>
 </div>
-)
+
+        )
+    }
 }
 
-export default Inpt;
+const mapDispatchToProps = (dispatch) => {
+    return{
+        SignUp:(newUser) => dispatch(SignUp(newUser))
+    }   
+   }
+export default connect(null,mapDispatchToProps)(Inpt);
