@@ -4,6 +4,7 @@ import Dashboard from './dashboard/index';
 import { BrowserRouter,Link, Switch, Route } from "react-router-dom";
 import LupaPassword from './home/LupaPass';
 import Obt from './dashboard/Obat_genre';
+import Inpt from './Input/input_regis';
 class App extends Component {
   render(){
     return (
@@ -13,6 +14,7 @@ class App extends Component {
             <Route path="/Home"  component={Dashboard}/>
             <Route path="/LupaPassword" component={LupaPassword} />
             <Route path="/obat" component={Obt} />
+            <Route path="/regis" component={Inpt} />
           </Switch>
       </BrowserRouter>
     );

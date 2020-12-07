@@ -27,18 +27,18 @@ return(
        
         <div className="Polygon-yellow-shadow Polygon-yellow ">
             <div className="Polygon-l">
-            <div className=""></div>
+            <div className="obat-3-img"></div>
             </div>
             </div>
             <div className="Polygon-red-shadow Polygon-red ">
             <div className="Polygon-n">
-            <div className=""></div>
+            <div className="obat-2-img"></div>
             </div>
             </div>
 
             <div className="Polygon-green-shadow  Polygon-green ">
             <div className="Polygon-G">
-            <div className=""></div>
+            <div className="obat-1-img"></div>
             </div>
             </div>
        
