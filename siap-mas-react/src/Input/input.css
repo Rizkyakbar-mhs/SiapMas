@@ -199,7 +199,20 @@ li span.active::before {
 .div5{
     width: 100px;
     height: 5%;
-    margin-top: -18%;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+.div7{
+    width: 100px;
+    height: 2%;
+    margin-top: 15%;
+}
+
+.div6{
+    width: 100px;
+    height: 5%;
+    margin-top: -19%;
+    margin-left: 99%;
 }
 .div3{
     width: 100px;
@@ -240,7 +253,7 @@ li span.active::before {
     margin-left: -358%;
     border-radius: 25px;
     padding-left: 10px;
-    margin-top: 25%;
+    margin-top: 195%;
     background-origin: content-box;
     width: 280px;
     height: 40px;
@@ -266,10 +279,10 @@ li span.active::before {
     margin-left: -358%;
     border-radius: 25px;
     padding-left: 10px;
-    margin-top: 27%;
+    margin-top: 80%;
     background-origin: content-box;
-    width: 280px;
-    height: 40px;
+    width: 770px;
+    height: 100px;
     background-color: #c6e0e4;
     outline: none;
 }
@@ -292,7 +305,7 @@ li span.active::before {
     margin-left: 130%;
     border-radius: 25px;
     padding-left: 10px;
-    margin-top: -90px;
+    margin-top: -100px;
     background-origin: content-box;
     width: 280px;
     height: 40px;

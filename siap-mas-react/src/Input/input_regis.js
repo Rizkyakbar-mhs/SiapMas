@@ -27,7 +27,6 @@ return(
                     placeholder="Masukkan Nip" 
                     id="Nip"
                     className="InputNip"
-                    transition={{delay:0.2,duration:1}}
                     initial={{scale:0}}
                         animate={{scale:1}}
                     />
@@ -35,21 +34,19 @@ return(
                     <div className="div2    ">
                     <motion.input 
                     type="text" 
-                    placeholder="Masukkan Password" 
+                    placeholder="Masukkan Nama" 
                     id="Password"
                     className="InputPasswords"
-                    transition={{delay:0.7,duration:1}}
                     initial={{scale:0}}
                         animate={{scale:1}}
                     />
                     </div>
                     <div  className="div4">
-                    <motion.input 
-                    type="text" 
-                    placeholder="Konfirmasi Password" 
+                    <motion.input
+                    
+                    placeholder="No Hp" 
                     id="Konfirmasi"
                     className="InputKonfirm"
-                    transition={{delay:0.8,duration:1}}
                     initial={{scale:0}}
                         animate={{scale:1}}
                     />
@@ -58,50 +55,46 @@ return(
                     <div  className="div3">
                     <motion.input 
                     type="text" 
-                    placeholder="Masukkan Nama" 
+                    placeholder="Masukkan Email" 
                     id="Nama"
                     className="InputNama"
-                    transition={{delay:0.3,duration:1}}
                     initial={{scale:0}}
                         animate={{scale:1}}
                     />
+                
                     </div>
-                    <div className="div1">
+                    <div className="div6">
                     <motion.input 
                     type="text" 
-                    placeholder="Masukkan Email" 
+                    placeholder="Konfirmasi Password" 
                     id="Email"
                     className="InputEmail"
-                    transition={{delay:0.4,duration:1}}
                     initial={{scale:0}}
                         animate={{scale:1}}
                     />
                     </div>
-                    <div className="div1">
+                    <div className="div7">
                     <motion.input 
                     type="text" 
-                    placeholder="Masukkan Alamat" 
+                    placeholder="Masukkan Password" 
                     id="Alamat"
                     className="InputAlamat"
-                    transition={{delay:0.5,duration:1}}
                     initial={{scale:0}}
                         animate={{scale:1}}
                     />
                     </div>
                     <div className="div1">
-                    <motion.input 
+                    <motion.textarea 
                     type="text" 
-                    placeholder="Masukkan Nomer Handphone" 
+                    placeholder="Alamat" 
                     id="Nomer_hp"
                     className="InputHp"
-                    transition={{delay:0.6,duration:0.5}}
                         initial={{scale:0}}
                         animate={{scale:1}}
                     />
                     </div>
                     <div className="div5">
                     <motion.input type="submit" 
-                    transition={{delay:0.9,duration:0.5}}
                     initial={{scale:0}}
                     animate={{scale:1}}
                     whileTap={{opacity:"0"}}
