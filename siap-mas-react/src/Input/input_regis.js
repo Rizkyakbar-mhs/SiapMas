@@ -27,6 +27,7 @@ return(
                     placeholder="Masukkan Nip" 
                     id="Nip"
                     className="InputNip"
+                    transition={{delay:0.5 ,duration:0.5}}
                     initial={{scale:0}}
                         animate={{scale:1}}
                     />
@@ -37,6 +38,7 @@ return(
                     placeholder="Masukkan Nama" 
                     id="Password"
                     className="InputPasswords"
+                    transition={{delay:0.5 ,duration:0.5}}
                     initial={{scale:0}}
                         animate={{scale:1}}
                     />
@@ -47,6 +49,7 @@ return(
                     placeholder="No Hp" 
                     id="Konfirmasi"
                     className="InputKonfirm"
+                    transition={{delay:0.7 ,duration:0.5}}
                     initial={{scale:0}}
                         animate={{scale:1}}
                     />
@@ -58,6 +61,7 @@ return(
                     placeholder="Masukkan Email" 
                     id="Nama"
                     className="InputNama"
+                    transition={{delay:0.7 ,duration:0.5}}
                     initial={{scale:0}}
                         animate={{scale:1}}
                     />
@@ -69,6 +73,7 @@ return(
                     placeholder="Konfirmasi Password" 
                     id="Email"
                     className="InputEmail"
+                    transition={{delay:1 ,duration:0.5}}
                     initial={{scale:0}}
                         animate={{scale:1}}
                     />
@@ -79,6 +84,7 @@ return(
                     placeholder="Masukkan Password" 
                     id="Alamat"
                     className="InputAlamat"
+                    transition={{delay:1 ,duration:0.5}}
                     initial={{scale:0}}
                         animate={{scale:1}}
                     />
@@ -89,12 +95,14 @@ return(
                     placeholder="Alamat" 
                     id="Nomer_hp"
                     className="InputHp"
+                    transition={{delay:1.2 ,duration:0.5}}
                         initial={{scale:0}}
                         animate={{scale:1}}
                     />
                     </div>
                     <div className="div5">
                     <motion.input type="submit" 
+                    transition={{delay:1.2 ,duration:0.5}}
                     initial={{scale:0}}
                     animate={{scale:1}}
                     whileTap={{opacity:"0"}}
