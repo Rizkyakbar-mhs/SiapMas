@@ -1,9 +1,16 @@
 import React, { Component } from 'react'
-import LogoUser from '../assets/LoginLogo.png';
+        import LogoUser from '../assets/LoginLogo.png';
 import './lupa.css';
 import { motion } from "framer-motion";
 
 export default class LupaPass extends Component {
+    state = {
+        isActive : false,
+        email: '',
+        oldPassword: '',
+        newPassword: ''
+    }
+
     render(){
         const s = 10;
         const shadowColor = `rgb(142, 141, 141)`;
@@ -27,7 +34,7 @@ export default class LupaPass extends Component {
 
             <motion.input 
                 type="text" 
-                placeholder="NIP" 
+                placeholder="Email" 
                 className="InputUsername"
                 transition={{ delay:1.1, duration:0.3 }}
                 initial={{opacity:0}}

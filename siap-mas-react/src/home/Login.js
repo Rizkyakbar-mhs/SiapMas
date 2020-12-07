@@ -1,6 +1,6 @@
 import React,{ Component } from "react";
 import LogoUser from '../assets/LoginLogo.png';
-import './Home.css';
+import './home.css';
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
@@ -149,6 +149,7 @@ class Login extends Component {
                     </motion.label>
                 </Link>
             </motion.div>
+            
             <motion.div 
                     initial={{ opacity:0 }}
                     style={{ padding:0 }}
@@ -157,8 +158,8 @@ class Login extends Component {
                     whileTap={{ x: -3, y: -3, boxShadow: `3px 3px 0 ${shadowColor}` }}
                     className="containerInput"
                     transition={{ duration:0.4, boxShadow: { velocity: 0 }, default: { type: "spring" }}}>
-                      <Link to="/home"> 
-                        <motion.input type="submit" 
+                      <Link to="/home">
+                      <motion.input type="submit" 
                         className="InputButton"
                         onClick={this.handleSubmit}
                         value="LOGIN"
