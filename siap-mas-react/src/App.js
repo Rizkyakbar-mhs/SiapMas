@@ -6,6 +6,7 @@ import LupaPassword from './home/LupaPass';
 import Obt from './dashboard/Obat_genre';
 import { connect } from 'react-redux'
 import Inpt from './Input/input_regis';
+import Pr from './output/profile';
 class App extends Component {
   render(){
     const { auth } = this.props;
@@ -26,6 +27,7 @@ const LoginLinks = () => {
         <Route exact path="/" component={Dashboard}/>
         <Route path="/obat" component={Obt} />
         <Route path="/regis" component={Inpt} />
+        <Route path="/profile" component={Pr} />
         {/* <Route path="*"><Redirect to="/" /></Route> */}
       </Switch>
   </BrowserRouter>
