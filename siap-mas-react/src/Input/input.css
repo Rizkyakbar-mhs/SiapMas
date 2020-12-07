@@ -182,44 +182,50 @@ li span.active::before {
     width: 70%;
     margin: auto;
 }
-.div1{
+
+.div1 {
     width: 100px;
     height: 10%;
 }
-.div2{
+
+.div2 {
     width: 100px;
     height: 10%;
 }
-.div4{
+
+.div4 {
     width: 100px;
     height: 1%;
     margin-top: -2%;
 }
-.div5{
+
+.div5 {
     width: 100px;
     height: 5%;
     margin-top: 20%;
     margin-left: 15%;
 }
-.div7{
+
+.div7 {
     width: 100px;
     height: 2%;
     margin-top: 15%;
 }
 
-.div6{
+.div6 {
     width: 100px;
     height: 5%;
     margin-top: -19%;
     margin-left: 99%;
 }
-.div3{
+
+.div3 {
     width: 100px;
     height: 4%;
 }
 
 .InputNip {
-    
+
     border: 1px solid rgb(198, 224, 228);
     margin-left: -360%;
     border-radius: 25px;
@@ -233,7 +239,7 @@ li span.active::before {
 }
 
 .InputNama {
-    
+
     border: 1px solid rgb(198, 224, 228);
     margin-left: -360%;
     border-radius: 25px;
@@ -247,7 +253,7 @@ li span.active::before {
 }
 
 .InputEmail {
-    
+
     border: 1px solid rgb(198, 224, 228);
     margin-left: -358%;
     border-radius: 25px;
@@ -259,8 +265,9 @@ li span.active::before {
     background-color: #c6e0e4;
     outline: none;
 }
+
 .InputAlamat {
-    
+
     border: 1px solid rgb(198, 224, 228);
     margin-left: -358%;
     border-radius: 25px;
@@ -272,8 +279,9 @@ li span.active::before {
     background-color: #c6e0e4;
     outline: none;
 }
+
 .InputHp {
-    
+
     border: 1px solid rgb(198, 224, 228);
     margin-left: -358%;
     border-radius: 25px;
@@ -285,8 +293,9 @@ li span.active::before {
     background-color: #c6e0e4;
     outline: none;
 }
+
 .InputKonfirm {
-    
+
     border: 1px solid rgb(198, 224, 228);
     margin-left: 130%;
     border-radius: 25px;
@@ -298,8 +307,9 @@ li span.active::before {
     background-color: #c6e0e4;
     outline: none;
 }
+
 .InputPasswords {
-    
+
     border: 1px solid rgb(198, 224, 228);
     margin-left: 130%;
     border-radius: 25px;
@@ -311,6 +321,7 @@ li span.active::before {
     background-color: #c6e0e4;
     outline: none;
 }
+
 .InputUsername:hover {
     box-shadow: 0 0 1pt 1pt #91a6a9;
 }
