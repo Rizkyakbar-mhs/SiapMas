@@ -4,7 +4,7 @@ import './home.css';
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
-import { signIn } from '../store/actions/AuthActions';
+import { signIn } from '../store/actions/SignIn';
 
 class Login extends Component {
     state = {
@@ -179,7 +179,6 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state);
     return {
         authError: state.auth.authError
     }
