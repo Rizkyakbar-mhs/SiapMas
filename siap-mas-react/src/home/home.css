@@ -24,6 +24,16 @@ div {
     list-style-type: none;
     text-decoration: none;
 }
+.marquee{
+    width: 100%;
+    margin-left: 9%;
+    margin-top: 2.5%;
+    font-size: 100%;
+    color: white;
+    background-color: rgb(54, 53, 53);
+    
+    
+}
 
 body {
     background: url("../assets/background.png") no-repeat center fixed;
