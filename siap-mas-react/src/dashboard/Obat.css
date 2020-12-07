@@ -1,0 +1,75 @@
+.backgroundHome {
+    background: url("../assets/LoginBackground.png") no-repeat center fixed;
+    background-size: cover;
+    overflow: hidden;
+
+
+}
+
+
+
+.Polygon-red {
+    margin-left: 2px;
+    margin-top: -315px !important;
+}
+
+
+.Polygon-4-Img {
+    background: url("../assets/ico/obat.png") no-repeat center;
+    background-size: contain;
+    width: 265px;
+    height: 200px;
+    margin-right: -11px;
+    margin-top: -6px;
+}
+.Polygon-yellow {
+    margin-left: 177px;
+    margin-top: 280px !important;
+}
+.Polygon-green {
+    margin-left: 355px;
+    margin-top: -14px !important;
+}
+
+
+
+.Polygon-red-shadow {
+    filter: drop-shadow(-6px 10px 10px rgb(134, 2, 2));
+}
+
+.Polygon-yellow-shadow {
+    filter: drop-shadow(-6px 10px 10px rgb(153, 150, 1));
+}
+
+.Polygon-green-shadow {
+    filter: drop-shadow(-6px 10px 10px rgb(6, 139, 1));
+}
+
+.Polygon-n {
+    clip-path: polygon(30% 0%, 75% 0%, 96% 50%, 75% 100%, 30% 100%, 8% 50%);
+    background-color: #ff0101;
+    background-position: center;
+    margin-left: 100px;
+    display: flex;
+    width: 265px;
+    height: 196px;
+}
+.Polygon-l {
+    clip-path: polygon(30% 0%, 75% 0%, 96% 50%, 75% 100%, 30% 100%, 8% 50%);
+    background-color: #ffee01;
+    background-position: center;
+    margin-left: 100px;
+    display: flex;
+    width: 265px;
+    height: 196px;
+}
+
+.Polygon-G {
+    clip-path: polygon(30% 0%, 75% 0%, 96% 50%, 75% 100%, 30% 100%, 8% 50%);
+    background-color: #1fee3b;
+    background-position: center;
+    margin-left: 100px;
+    display: flex;
+    width: 265px;
+    height: 196px;
+}
