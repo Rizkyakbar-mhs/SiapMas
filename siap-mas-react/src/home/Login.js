@@ -1,6 +1,6 @@
 import React,{ Component } from "react";
 import LogoUser from '../assets/LoginLogo.png';
-import './Home.css';
+import './home.css';
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
