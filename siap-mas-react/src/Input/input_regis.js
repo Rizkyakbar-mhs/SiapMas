@@ -32,46 +32,53 @@ return(
                     <input 
                     type="text" 
                     placeholder="Masukkan Password" 
-                    id="Nip"
+                    id="Password"
                     className="InputPasswords"/>
                     </div>
                     <div  className="div4">
                     <input 
                     type="text" 
                     placeholder="Konfirmasi Password" 
-                    id="Nip"
+                    id="Konfirmasi"
                     className="InputKonfirm"/>
                     </div>
-
+                    
                     <div  className="div3">
                     <input 
                     type="text" 
                     placeholder="Masukkan Nama" 
-                    id="Nip"
+                    id="Nama"
                     className="InputNama"/>
                     </div>
                     <div className="div1">
                     <input 
                     type="text" 
                     placeholder="Masukkan Email" 
-                    id="Nip"
+                    id="Email"
                     className="InputEmail"/>
                     </div>
                     <div className="div1">
                     <input 
                     type="text" 
                     placeholder="Masukkan Alamat" 
-                    id="Nip"
+                    id="Alamat"
                     className="InputAlamat"/>
                     </div>
                     <div className="div1">
                     <input 
                     type="text" 
                     placeholder="Masukkan Nomer Handphone" 
-                    id="Nip"
+                    id="Nomer_hp"
                     className="InputHp"/>
                     </div>
-                    
+                    <div className="div5">
+                    <motion.input type="submit" 
+                    initial={{scale:0}}
+                    animate={{scale:1}}
+                    whileTap={{opacity:"0"}}
+                        value="Daftar"
+                        className="Inputtombol"/>
+                    </div>
      </div>
      
 

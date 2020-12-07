@@ -17,7 +17,7 @@
 
 
 
-button {
+.Tombol {
     color: white;
     padding: 10px 30px;
     font-size: 1em;
@@ -194,6 +194,12 @@ li span.active::before {
 .div4{
     width: 100px;
     height: 1%;
+    margin-top: -2%;
+}
+.div5{
+    width: 100px;
+    height: 5%;
+    margin-top: -18%;
 }
 .div3{
     width: 100px;
@@ -341,14 +347,16 @@ li span.active::before {
     margin-left: 20%;
 }
 
-.InputButton {
+.Inputtombol {
     border: none;
     border-radius: 25px;
     background: rgb(0, 212, 255);
     background: linear-gradient(156deg, rgba(0, 212, 255, 1) 0%, rgba(22, 122, 220, 1) 58%, rgba(43, 34, 186, 1) 100%);
     color: white;
-    width: 100%;
-    height: 100%;
+    width: 150%;
+    height: 200%;
+    margin-top: -80%;
+    margin-left: 200%;
     outline: none;
 }
 
