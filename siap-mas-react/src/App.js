@@ -10,7 +10,7 @@ class App extends Component {
   render(){
     const { auth } = this.props;
     console.log(auth);
-    const links = auth.uid ? <LoginLinks /> : <NotLoginLinks /> ;
+    const links =  auth.uid ? <LoginLinks /> : <NotLoginLinks /> ;
     return (
         <div>
           {links}
@@ -26,7 +26,7 @@ const LoginLinks = () => {
         <Route exact path="/" component={Dashboard}/>
         <Route path="/obat" component={Obt} />
         <Route path="/regis" component={Inpt} />
-        <Route path=""><Redirect to="/" /></Route>
+        {/* <Route path="*"><Redirect to="/" /></Route> */}
       </Switch>
   </BrowserRouter>
 );
@@ -38,7 +38,7 @@ const NotLoginLinks = () => {
       <Switch>
         <Route exact path="/" component={Login}/>
         <Route path="/LupaPassword" component={LupaPassword} />
-        <Route path=""><Redirect to="/" /></Route>
+        {/* <Route path="*"><Redirect to="/" /></Route> */}
       </Switch>
   </BrowserRouter>
 );
