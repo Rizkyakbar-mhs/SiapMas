@@ -2,10 +2,11 @@ import React, { Component } from 'react'
 import LogoUser from '../assets/LoginLogo.png';
 import './lupa.css';
 import { motion } from "framer-motion";
+import { connect } from "react-redux";
+import { resetPass } from "../store/actions/ResetPass";
 
-export default class LupaPass extends Component {
+class LupaPass extends Component {
     state = {
-        isActive : false,
         email: '',
     }
 
@@ -56,6 +57,8 @@ export default class LupaPass extends Component {
                 type="text" 
                 placeholder="Email" 
                 className="InputUsername"
+                id="email"
+                onChange={this.handleChange}
                 transition={{ delay:1.1, duration:0.3 }}
                 initial={{opacity:0}}
                 animate={{ opacity:1 }}
@@ -78,6 +81,7 @@ export default class LupaPass extends Component {
         <motion.input type="submit" 
                     className="InputButton"
                     value="Lupa Password"
+                    onClick={this.handleSubmit}
                     />
                     </motion.div>
 
@@ -85,3 +89,10 @@ export default class LupaPass extends Component {
         )
     }
 }
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        resetPass: (creds) => dispatch(resetPass(creds))
+    }
+}
+export default connect(null,mapDispatchToProps)(LupaPass);

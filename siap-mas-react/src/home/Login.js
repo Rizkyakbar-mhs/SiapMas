@@ -170,8 +170,9 @@ class Login extends Component {
             <div> { authError ? <p style={{ color:"red" }}>{ authError }</p> : null }</div>
             </form>
             </motion.div>
-            
+            <div>
             <marquee direction="left" className="marquee"> Date now ||Selamat Datang di Sistem Informasi Apotek Puskesmas,Silahkan Login menggunakan username dan password yang telah and miliki|| copy right by Siap-Mas Dev-Team </marquee>
+            </div>
             </div>
             
          )
