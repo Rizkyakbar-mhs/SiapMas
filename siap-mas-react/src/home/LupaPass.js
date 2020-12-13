@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-        import LogoUser from '../assets/LoginLogo.png';
+import LogoUser from '../assets/LoginLogo.png';
 import './lupa.css';
 import { motion } from "framer-motion";
 
@@ -7,11 +7,31 @@ export default class LupaPass extends Component {
     state = {
         isActive : false,
         email: '',
-        oldPassword: '',
-        newPassword: ''
+    }
+
+    handleChange = (e) => {
+        this.setState({
+            [e.target.id]: e.target.value
+        })
+    }
+
+    handleSubmit = (e) => {
+        e.preventDefault();
     }
 
     render(){
+        const sendResetEmail = event => {
+            event.preventDefault();
+            auth
+            .sendResetEmail(email)
+            .then(() => {
+                setEmailHasBeenSent(true);
+                setTimeout(() => {setEmailHasBeenSent(false)},3000);
+            })
+            .catch(() => {
+                setError("Reset password unsuccessfull")
+            });
+        };
         const s = 10;
         const shadowColor = `rgb(142, 141, 141)`;
         return(
