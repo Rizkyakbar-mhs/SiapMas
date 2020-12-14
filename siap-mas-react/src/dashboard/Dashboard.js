@@ -2,7 +2,16 @@ import React, { Component } from 'react';
 import { motion } from "framer-motion";
 import './index.css';
 import SignOut from '../store/actions/SignOut'
+import profile from '../output/profile'
 import { connect } from 'react-redux'
+
+    const mapStateToProps = (state) => {
+        console.log(state); 
+            return{
+                auth:state.firebase.auth,
+                profile:state.firebase.profile
+            }
+        }
 
     const Dash = (props) => {
         return(
@@ -52,6 +61,7 @@ import { connect } from 'react-redux'
         return {
             SignOut: () => dispatch(SignOut())
         }
+
     }
 
 export default connect(null, mapDispatchToProps)(Dash);

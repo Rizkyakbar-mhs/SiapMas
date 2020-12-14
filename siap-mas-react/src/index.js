@@ -13,7 +13,7 @@ import { reduxFirestore, getFirestore } from 'redux-firestore';
   const store = createStore(RootReducer,
     compose(
       applyMiddleware(thunk.withExtraArgument({getFirebase, getFirestore})),
-      reactReduxFirebase(firebaseConfig), // redux binding for firebase
+      reactReduxFirebase(firebaseConfig, {useFirestoreForProfile: true, userProfile: 'users'}), // redux binding for firebase
       reduxFirestore(firebaseConfig) // redux bindings for firestore
     )
   );
