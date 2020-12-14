@@ -21,18 +21,6 @@ class LupaPass extends Component {
     }
 
     render(){
-        const sendResetEmail = event => {
-            event.preventDefault();
-            auth
-            .sendResetEmail(email)
-            .then(() => {
-                setEmailHasBeenSent(true);
-                setTimeout(() => {setEmailHasBeenSent(false)},3000);
-            })
-            .catch(() => {
-                setError("Reset password unsuccessfull")
-            });
-        };
         const s = 10;
         const shadowColor = `rgb(142, 141, 141)`;
         return(
