@@ -18,6 +18,7 @@ class LupaPass extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
+        this.props.resetPass(this.state)
     }
 
     render(){
