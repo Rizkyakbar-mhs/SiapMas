@@ -7,6 +7,7 @@ import Obt from './dashboard/Obat_genre';
 import { connect } from 'react-redux'
 import Inpt from './Input/input_regis';
 import Pr from './output/profile';
+import DaftarObat from './dashboard/DaftarObat'
 class App extends Component {
   render(){
     const { auth } = this.props;
@@ -28,6 +29,7 @@ const LoginLinks = () => {
         <Route path="/obat" component={Obt} />
         <Route path="/regis" component={Inpt} />
         <Route path="/profile" component={Pr} />
+        <Route path="/DaftarObat" component={DaftarObat} />
         {/* <Route path="*"><Redirect to="/" /></Route> */}
       </Switch>
   </BrowserRouter>

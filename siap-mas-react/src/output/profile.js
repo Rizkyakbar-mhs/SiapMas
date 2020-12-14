@@ -39,9 +39,13 @@ class Pr extends Component {
         
      <div className="container-form-profile">
      <div className="div-nip">
+     <div className="tulisan">
+            PROFIL
+            </div>
         NIP 
         <div className="titik">
         :
+        
         </div>
      </div>
      <div className="div-nama">
@@ -63,7 +67,12 @@ class Pr extends Component {
         </div>
 </div>
    </div>
+   
      
+     <div className="bulat">
+     <div className="profile-img">
+    </div>
+     </div>
 
    
 
