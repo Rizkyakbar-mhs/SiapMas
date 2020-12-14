@@ -1,6 +1,6 @@
 import React,{ Component } from "react";
 import LogoUser from '../assets/LoginLogo.png';
-import './Home.css';
+import './home.css';
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
@@ -172,7 +172,7 @@ class Login extends Component {
             </form>
             </motion.div>
             <div>
-            <marquee direction="left" className="marquee"> {date} ||Selamat Datang di Sistem Informasi Apotek Puskesmas,Silahkan Login menggunakan username dan password yang telah and miliki|| copy right by Siap-Mas Dev-Team </marquee>
+            <marquee direction="left" className="marquee"> {date} ||Selamat Datang di Sistem Informasi Apotek Puskesmas,Silahkan Login menggunakan username dan password yang telah anda miliki|| copyright by Siap-Mas Dev-Team </marquee>
             </div>
             </div>
             
