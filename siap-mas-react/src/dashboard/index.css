@@ -30,7 +30,7 @@
     background-size: contain;
     width: 265px;
     height: 200px;
-    margin-right: -9px;
+    margin-right: -20px;
     margin-top: -7px;
 }
 
@@ -39,7 +39,7 @@
     background-size: contain;
     width: 265px;
     height: 200px;
-    margin-right: -11px;
+    margin-right: -20px;
     margin-top: -6px;
 }
 
@@ -48,8 +48,8 @@
     background-size: contain;
     width: 265px;
     height: 200px;
-    margin-right: -11px;
-    margin-top: -6px;
+    margin-right: -10px;
+    margin-top: -20px;
 }
 
 .Polygon-5-Img {
@@ -76,18 +76,18 @@
 }
 
 .Polygon-3 {
-    margin-left: -367px;
-    margin-top: -215px !important;
+    margin-left: -3px;
+    margin-top: -219px !important;
 }
 
 .Polygon-4 {
-    margin-left: 175px;
+    margin-left: 179px;
     margin-top: -115px !important;
 }
 
 .Polygon-5 {
-    margin-left: -6px;
-    margin-top: -118px !important;
+    margin-left: 1px;
+    margin-top: -115px !important;
 }
 
 .Polygon-Warp {
