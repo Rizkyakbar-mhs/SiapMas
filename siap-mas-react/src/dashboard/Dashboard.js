@@ -6,8 +6,8 @@ import { connect } from 'react-redux'
 
     const Dash = (props) => {
         return(
-            <div>
-        <div>
+            <motion.div>
+        <motion.div>
                 <div className="Polygon-Warp Polygon-0 ">
                     <div className="Polygon">
                     <div className="Polygon-2-Img"></div>
@@ -43,8 +43,8 @@ import { connect } from 'react-redux'
                     </div>
                 </div>
                 
-        </div>
-        </div>
+        </motion.div>
+        </motion.div>
         )
     }
         

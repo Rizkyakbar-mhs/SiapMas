@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
 import { signIn } from '../store/actions/SignIn';
+import moment from 'moment' ;
 
 class Login extends Component {
     state = {
@@ -29,7 +30,7 @@ class Login extends Component {
         const s = 10;
         const shadowColor = `rgb(142, 141, 141)`;
         const { authError } = this.props;
-    
+        const date = moment().format('DD MMM YYYY || HH:mm:ss A');
     
         // const click = {
         //     up: {
@@ -74,7 +75,7 @@ class Login extends Component {
                         whileHover={{ scale:1.1, }} >
                 <motion.input 
                     type="text" 
-                    placeholder="USERNAME" 
+                    placeholder="EMAIL" 
                     id="email"
                     className="InputUsername"
                     onChange={this.handleChange}
@@ -171,7 +172,7 @@ class Login extends Component {
             </form>
             </motion.div>
             <div>
-            <marquee direction="left" className="marquee"> Date now ||Selamat Datang di Sistem Informasi Apotek Puskesmas,Silahkan Login menggunakan username dan password yang telah and miliki|| copy right by Siap-Mas Dev-Team </marquee>
+            <marquee direction="left" className="marquee"> {date} ||Selamat Datang di Sistem Informasi Apotek Puskesmas,Silahkan Login menggunakan username dan password yang telah and miliki|| copy right by Siap-Mas Dev-Team </marquee>
             </div>
             </div>
             
