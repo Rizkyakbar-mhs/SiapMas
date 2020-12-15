@@ -22,7 +22,7 @@ class Login extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        this.props.signIn(this.state)
+        this.props.signIn(this.state);
     }
 
 
@@ -31,16 +31,7 @@ class Login extends Component {
         const shadowColor = `rgb(142, 141, 141)`;
         const { authError } = this.props;
         const date = moment().format('DD MMM YYYY || HH:mm:ss A');
-    
-        // const click = {
-        //     up: {
-        //       x: -s * 1.5,
-        //       y: -s * 1.5,
-        //       boxShadow: `${s * 1.5}px ${s * 1.5}px 0 ${shadowColor}`
-        //     },
-        //     static: { x: -s, y: -s, boxShadow: `${s}px ${s}px 0 ${shadowColor}` },
-        //     down: { x: -3, y: -3, boxShadow: `3px 3px 0 ${shadowColor}` }
-        //   };
+
     
          return(
              <div>

@@ -12,6 +12,8 @@ class App extends Component {
   render(){
     const { auth } = this.props;
     console.log(auth);
+    const session = auth;
+    localStorage.setItem('userLogin', JSON.stringify(session));
     const links =  auth.uid ? <LoginLinks /> : <NotLoginLinks /> ;
     return (
         <div>

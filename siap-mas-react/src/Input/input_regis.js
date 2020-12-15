@@ -12,9 +12,7 @@ class Inpt extends Component {
         email:'',
         password:'',
         konfirm:'',
-        Alamat:'',
-        
-
+        Alamat:''
     }
     handleChange = (e) =>{
 this.setState({

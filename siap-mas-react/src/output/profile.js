@@ -28,12 +28,10 @@ class Pr extends Component {
         const s = 10;
         const shadowColor = `rgb(142, 141, 141)`;
         const { authError } = this.props; 
-
+        const userLogin = JSON.parse(localStorage.getItem('userLogin'));
         const mapStateToProps = (state) => {
             console.log(state);
-        }
-
-    
+        }    
          return(
             <div>
         
@@ -42,10 +40,9 @@ class Pr extends Component {
      <div className="tulisan">
             PROFIL
             </div>
-        NIP 
+        Email 
         <div className="titik">
-        :
-        
+        :{userLogin.email}        
         </div>
      </div>
      <div className="div-nama">
@@ -73,12 +70,6 @@ class Pr extends Component {
      <div className="profile-img">
     </div>
      </div>
-
-   
-
-       
-       
-        
 </div>)
     }
 }
