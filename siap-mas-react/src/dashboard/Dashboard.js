@@ -5,14 +5,6 @@ import SignOut from '../store/actions/SignOut'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
 
-    const mapStateToProps = (state) => {
-        console.log(state); 
-            return{
-                auth:state.firebase.auth,
-                profile:state.firebase.profile
-            }
-        }
-
     const Dash = (props) => {
     return(
     <motion.div>
