@@ -34,7 +34,11 @@ handleSubmit = (e) => {
             <div>
 <div>
         
-     <div className="container-obat">
+     <motion.div className="container-obat"
+     initial={{opacity:0}}
+     animate={{opacity:1}}
+     transition={{delay:1, duration:1.5}}
+     >
 
      <div className="divo">
         
@@ -89,15 +93,17 @@ handleSubmit = (e) => {
          </input>
      </div>
      <div className="divButton">
-     <input type="submit" className="InputSubmitObat" value="Tambah Obat">
+     <motion.input type="submit" className="InputSubmitObat" value="Tambah Obat"
+     whileHover={{scale:1.2}}
+     >
 
-     </input>
+     </motion.input>
 
      </div>
     
 
     
-                    </div>
+                    </motion.div>
      </div>
      
 
