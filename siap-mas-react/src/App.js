@@ -6,6 +6,7 @@ import LupaPassword from './home/LupaPass';
 import Obt from './dashboard/Obat_genre';
 import { connect } from 'react-redux'
 import Inpt from './Input/input_regis';
+import DataObts from './Input/dataObat';
 import Pr from './output/profile';
 import DaftarObat from './dashboard/DaftarObat'
 class App extends Component {
@@ -32,6 +33,7 @@ const LoginLinks = () => {
         <Route path="/regis" component={Inpt} />
         <Route path="/profile" component={Pr} />
         <Route path="/DaftarObat" component={DaftarObat} />
+        <Route path="/DataObat"   component={DataObts}/>
         {/* <Route path="*"><Redirect to="/" /></Route> */}
       </Switch>
   </BrowserRouter>
