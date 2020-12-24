@@ -8,7 +8,8 @@ import { connect } from 'react-redux'
 import Inpt from './Input/input_regis';
 import DataObts from './Input/dataObat';
 import Pr from './output/profile';
-import DaftarObat from './dashboard/DaftarObat'
+import DaftarObat from './dashboard/DaftarObat';
+import EditPr from './Input/EditProfile';
 class App extends Component {
   render(){
     const { auth } = this.props;
@@ -34,6 +35,7 @@ const LoginLinks = () => {
         <Route path="/profile" component={Pr} />
         <Route path="/DaftarObat" component={DaftarObat} />
         <Route path="/DataObat"   component={DataObts}/>
+        <Route path="/EditProfile" component={EditPr}/>
         {/* <Route path="*"><Redirect to="/" /></Route> */}
       </Switch>
   </BrowserRouter>
