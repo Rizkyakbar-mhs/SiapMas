@@ -1,16 +1,19 @@
 import React,{ Component } from "react";
+import { motion } from "framer-motion";
 import LogoUser from '../assets/LoginLogo.png';
 import './EditProfile.css';
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
+import { UpdateUser } from '../store/actions/UpdateUser'
 
 
 class EditPr extends Component {
     state = {
         isActive : false,
         email: '',
-        password: ''
+        password: '',
+        no:'',
+        alamat:''
     }
 
     handleChange = (e) => {
@@ -21,15 +24,19 @@ class EditPr extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        this.props.signIn(this.state)
+        this.props.UpdateUser(this.state)
     }
-
 
     render(){
         const { profile } = this.props;
         return( <Profile profile={profile} />)
 }
 }
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        this.props.UpdateUser(this.state)
+    }
 
 const Profile = (props) => {
     
@@ -49,28 +56,31 @@ const Profile = (props) => {
         </div>
     Email 
     <div className="titik">
-    :{props.profile.Email}        
+    :       
     </div>
     <div className="divEmail">
-         <input type="text" className="Email" placeholder="Email">
+         <input type="text" className="Email" placeholder={props.profile.Email} >
              
          </input>
          </div>
-         <div className="divButton2">
-         <motion.input type="submit" className="InputEditPr" value="Simpan Peruban" 
-         whileHover={{scale:1.2}}
-         >
-             
-         </motion.input>
-         </div>
+    
+    <div className="divButton2">
+        <motion.input
+        type="submit"
+        onSubmit={handleClick}
+        className="InputEditPr"
+        value="Simpan Peruban" 
+        whileHover={{scale:1.2}}
+        ></motion.input>
+        </div>
  </div>
  <div className="div-nama">
         Nama
         <div className="titik">
-    :{props.profile.Nama}
+    :
     </div>
     <div className="divNamaUser">
-         <input type="text" className="NamaU" placeholder="Nama">
+         <input type="text" className="NamaU" placeholder={props.profile.Nama}>
              
          </input>
          </div>
@@ -78,10 +88,10 @@ const Profile = (props) => {
 <div className="div-hp">
 No HP
 <div className="titik">
-    :{props.profile.No_hp}
+    :
     </div>
     <div className="divNomerHp">
-         <input type="text" className="NomerHp" placeholder="Nomer Handphone">
+         <input type="text" className="NomerHp" placeholder={props.profile.No_hp}>
              
          </input>
          </div>
@@ -89,11 +99,11 @@ No HP
 <div className="div-alamat">
 Alamat
 <div className="titik-2">
-    :{props.profile.Alamat}
+    :
     </div>
     
     <div className="divAlamatUser">
-         <input type="text" className="AlamatUser" placeholder="Alamat">
+         <input type="text" className="AlamatUser" placeholder={props.profile.Alamat}>
              
          </input>
          </div>

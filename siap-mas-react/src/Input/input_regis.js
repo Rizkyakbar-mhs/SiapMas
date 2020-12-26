@@ -14,16 +14,17 @@ class Inpt extends Component {
         konfirm:'',
         Alamat:''
     }
+
     handleChange = (e) =>{
-this.setState({
-[e.target.id]: e.target.value
-})
-}
-handleSubmit = (e) => {
-    e.preventDefault();
-    this.props.SignUp(this.state);
-    console.log(this.state);
-}
+        this.setState({
+        [e.target.id]: e.target.value
+        })
+    }
+    
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.props.SignUp(this.state);
+    }
 
     componentDidMount(){
         document.title = "SIAPMAS - OBAT";
