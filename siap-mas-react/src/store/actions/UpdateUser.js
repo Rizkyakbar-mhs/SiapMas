@@ -2,12 +2,12 @@ export const UpdateUser = (User) => {
     return (dispatch, getState,{getFirebase, getFirestore}) => {
     const firebase = getFirebase();
     const firestore = getFirestore();
+    const user = firebase.auth().currentUser;
 
-    firebase.auth().updateProfile({
-        email:User.email
-    }
+    user.updateEmail(
+        User.Email
     ).then((resp)=>{
-        return firestore.collection('user').doc(resp.user.uid).set({
+        return firestore.collection('user').doc(resp.user.uid).update({
             Nama: User.nama,
             No_hp: User.hp,
             Alamat: User.alamat,
@@ -17,6 +17,7 @@ export const UpdateUser = (User) => {
         dispatch({type: 'SIGNUP_SUCCESS'})
     }).catch(err =>{
         dispatch({type: 'SIGNUP_ERROR', err})
+        console.log(err)
     })
 }
 }

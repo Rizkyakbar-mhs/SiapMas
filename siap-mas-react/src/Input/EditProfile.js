@@ -4,18 +4,17 @@ import LogoUser from '../assets/LoginLogo.png';
 import './EditProfile.css';
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { UpdateUser } from '../store/actions/UpdateUser'
+import UpdateUser from '../store/actions/UpdateUser'
 
 
 class EditPr extends Component {
     state = {
         isActive : false,
-        email: '',
-        password: '',
-        no:'',
-        alamat:''
+        Email: '',
+        Nama: '',
+        No_hp:'',
+        Alamat:''
     }
-
     handleChange = (e) => {
         this.setState({
             [e.target.id]: e.target.value
@@ -23,22 +22,19 @@ class EditPr extends Component {
     }
 
     handleSubmit = (e) => {
+        console.log(this.state)
         e.preventDefault();
         this.props.UpdateUser(this.state)
     }
 
     render(){
         const { profile } = this.props;
-        return( <Profile profile={profile} />)
-}
-}
+        const Profil = this.Profile;
+        return(<Profil profile={profile} />
+            )
+        }
 
-    const handleClick = (e) => {
-        e.preventDefault();
-        this.props.UpdateUser(this.state)
-    }
-
-const Profile = (props) => {
+Profile = (props) => {
     
     const s = 10;
     const shadowColor = `rgb(142, 141, 141)`;
@@ -59,7 +55,7 @@ const Profile = (props) => {
     :  
     </div>
     <div className="divEmail">
-         <input type="text" className="Email" placeholder={props.profile.Email} >
+         <input type="text" onChange={this.handleChange} id="Email" className="Email" placeholder={props.profile.Email} >
              
          </input>
          </div>
@@ -67,7 +63,7 @@ const Profile = (props) => {
     <div className="divButton2">
         <motion.input
         type="submit"
-        onSubmit={handleClick}
+        onClick={this.handleSubmit}
         className="InputEditPr"
         value="Simpan Peruban" 
         whileHover={{scale:1.2}}
@@ -80,7 +76,7 @@ const Profile = (props) => {
     :
     </div>
     <div className="divNamaUser">
-         <input type="text" className="NamaU" placeholder={props.profile.Nama}>
+         <input type="text" id="Nama" onChange={this.handleChange} className="NamaU" placeholder={props.profile.Nama}>
              
          </input>
          </div>
@@ -91,7 +87,7 @@ No HP
     :
     </div>
     <div className="divNomerHp">
-         <input type="text" className="NomerHp" placeholder={props.profile.No_hp}>
+         <input type="text" id="No_hp" onChange={this.handleChange} className="NomerHp" placeholder={props.profile.No_hp}>
              
          </input>
          </div>
@@ -103,7 +99,7 @@ Alamat
     </div>
     
     <div className="divAlamatUser">
-         <input type="text" className="AlamatUser" placeholder={props.profile.Alamat}>
+         <input type="text" id="Alamat" onChange={this.handleChange} className="AlamatUser" placeholder={props.profile.Alamat}>
              
          </input>
          </div>
@@ -115,8 +111,13 @@ Alamat
  
  
 </div>)
-}
+}}
 
+const mapDispatchToProps = (dispatch) => {
+    return{
+    UpdateUser:(User) => dispatch(UpdateUser(User))
+    }   
+   }
 
 const mapStateToProps = (state) => {
     console.log(state);
@@ -125,4 +126,4 @@ const mapStateToProps = (state) => {
       profile:state.firebase.profile
     }
   }
-export default connect(mapStateToProps)(EditPr) ;
+export default connect(mapStateToProps, mapDispatchToProps)(EditPr) ;
