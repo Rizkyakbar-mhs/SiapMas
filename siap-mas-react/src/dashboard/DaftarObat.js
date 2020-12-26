@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import './DaftarObat.css';
-
+import { firestoreConnect } from 'react-redux-firebase'
+import { compose } from 'redux'
+import { connect } from 'react-redux'
+import ProductList from './ProductList'
 class DaftarObat extends Component {
     state = {
 
@@ -11,29 +14,24 @@ class DaftarObat extends Component {
         document.body.className = "backgroundHome";
     }
     render() {
+        const { products } = this.props;
         return(
             <div>
-                <div className="Name">
-                    Name
-                </div>
-                <div className="Qty">
-                    Qty
-                </div>
-                <div className="Type">
-                    Type
-                </div>
-                <div className="Price">
-                    Price
-                </div>
-                <div className="GrandPrice">
-                    Grand Price
-                </div>
-                <div className="ExpDate">
-                    Expired Date
-                </div>
+                <ProductList products={products} />
             </div>
         )
     }
 }
+const mapStateToProps = (state) => {
+    console.log(state);
+    return {
+        products: state.firestore.ordered.obat
+    }
+}
 
-export default DaftarObat;
+export default compose(
+    connect(mapStateToProps),
+    firestoreConnect([
+        { collection: 'obat' }
+      ])
+)(DaftarObat);

@@ -72,22 +72,23 @@
 
 .Polygon-2 {
     margin-left: 358px;
-    margin-top: -113px !important;
+    margin-top: -113px;
 }
 
 .Polygon-3 {
     margin-left: -3px;
-    margin-top: -219px !important;
+    margin-top: -219px;
+    width: 200px;
 }
 
 .Polygon-4 {
     margin-left: 179px;
-    margin-top: -115px !important;
+    margin-top: -115px;
 }
 
 .Polygon-5 {
     margin-left: 1px;
-    margin-top: -115px !important;
+    margin-top: -115px;
 }
 
 .Polygon-Warp {

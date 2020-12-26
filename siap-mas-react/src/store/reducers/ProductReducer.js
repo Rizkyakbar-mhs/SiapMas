@@ -8,8 +8,8 @@ const initState = {
 
 const ProductReducer = (state = initState, action) => {
     switch (action.type) {
-        case 'CREATE_PRODUCT':
-                console.log('created Product', action.product)
+        case 'Input_Product':
+                console.log('created Product')
     }
     return state;
 }

@@ -2,28 +2,28 @@ import React,{ Component } from 'react';
 import { motion } from "framer-motion";
 import './dataObt.css';   
 import {connect} from 'react-redux'
-import {SignUp} from '../store/actions/SignUp'
+import InputProduct from '../store/actions/InputProduct'
+
 
 class DataObts extends Component {
     state ={
-        Nip:'',
-        nama:'',
-        hp:'',
-        email:'',
-        password:'',
-        konfirm:'',
-        Alamat:''
+        Code:'',
+        Name:'',
+        Qty:'',
+        Price:'',
+        Date:''
     }
+
     handleChange = (e) =>{
-this.setState({
-[e.target.id]: e.target.value
-})
-}
-handleSubmit = (e) => {
-    e.preventDefault();
-    this.props.SignUp(this.state);
-    console.log(this.state);
-}
+        this.setState({
+        [e.target.id]: e.target.value
+        })
+    }
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.props.InputProduct(this.state);
+        console.log(this.state);
+    }
 
     componentDidMount(){
         document.title = "SIAPMAS - OBAT";
@@ -49,7 +49,7 @@ handleSubmit = (e) => {
          
      </div>
      <div className="divI">
-     <input type="text" className="InputKodeObat">
+     <input type="text" id="Code" onChange={this.handleChange} className="InputKodeObat">
          </input>
      </div>
      <div className="divN">
@@ -58,7 +58,7 @@ handleSubmit = (e) => {
      </label>
      </div>
      <div className="divN1">
-         <input type="text" className="NamaObat">
+         <input type="text" id="Name" onChange={this.handleChange} className="NamaObat">
 
          </input>
      </div>
@@ -68,7 +68,7 @@ handleSubmit = (e) => {
          </label>
      </div>
      <div className="divIQTY">
-         <input type="number" className="QTY">
+         <input type="number" id="Qty" onChange={this.handleChange} className="QTY">
 
          </input>
      </div>
@@ -78,22 +78,22 @@ handleSubmit = (e) => {
          </label>
      </div>
      <div className="divIHrg">
-         <input type="number" className="HRG">
+         <input type="number" id="Price" onChange={this.handleChange} className="HRG">
 
          </input>
      </div>
      <div className="divDate">
          <label className="label4">
-             Date
+             Exp Date
          </label>
      </div>
      <div className="divIDate">
-         <input type="date" className="Date">
+         <input type="date" id="Date" onChange={this.handleChange} className="Date">
              
          </input>
      </div>
      <div className="divButton">
-     <motion.input type="submit" className="InputSubmitObat" value="Tambah Obat"
+     <motion.input type="submit" onClick={this.handleSubmit} className="InputSubmitObat" value="Tambah Obat"
      whileHover={{scale:1.2}}
      >
 
@@ -121,7 +121,7 @@ handleSubmit = (e) => {
 
 const mapDispatchToProps = (dispatch) => {
     return{
-        SignUp:(newUser) => dispatch(SignUp(newUser))
+        InputProduct:(product) => dispatch(InputProduct(product))
     }   
    }
 export default connect(null,mapDispatchToProps)(DataObts);
