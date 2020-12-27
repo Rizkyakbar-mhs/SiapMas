@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import './input.css';   
 import {connect} from 'react-redux'
 import {SignUp} from '../store/actions/SignUp'
+import { Link } from 'react-router-dom';
 
 class Inpt extends Component {
     state ={
@@ -32,13 +33,12 @@ class Inpt extends Component {
     }
     render() {
         return(
-            <div>
 <div>
-        
-     <div className="container-form">
-
-     <div className="div1">
-     <motion.input 
+    <div>
+        <div className="container-form">
+        <h2 align="center">Registrasi</h2>
+        <div className="div1">
+        <motion.input 
                     type="text" 
                     placeholder="Masukkan Nip" 
                     id="Nip"
@@ -134,13 +134,6 @@ class Inpt extends Component {
                         className="Inputtombol"/>
                     </div>
      </div>
-     
-
-   
-
-       
-       
-        
 </div>
 </div>
 

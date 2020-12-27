@@ -12,6 +12,7 @@ import DaftarObat from './dashboard/DaftarObat';
 import EditPr from './Input/EditProfile';
 import Report from './output/Report';
 import DetailObat from './dashboard/DetailObat';
+import About from './output/About';
 
 class App extends Component {
   render(){
@@ -41,6 +42,7 @@ const LoginLinks = () => {
         <Route path="/EditProfile" component={EditPr}/>
         <Route path="/Report"   component={Report}/>
         <Route path="/DetailObat"   component={DetailObat}/>
+        <Route path="/About" component={About} />
 
 
         {/* <Route path="*"><Redirect to="/" /></Route> */}

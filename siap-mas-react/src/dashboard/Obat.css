@@ -2,15 +2,11 @@
     background: url("../assets/LoginBackground.png") no-repeat center fixed;
     background-size: cover;
     overflow: hidden;
-
-
 }
-
-
 
 .Polygon-red {
     margin-left: 2px;
-    margin-top: -315px !important;
+    margin-top: -350px !important;
 }
 
 
@@ -28,7 +24,7 @@
 }
 .Polygon-green {
     margin-left: 348px;
-    margin-top: -14px !important;
+    margin-top: -60px !important;
 }
 
 

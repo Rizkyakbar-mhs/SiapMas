@@ -201,7 +201,7 @@ li span.active::before {
     width: 100px;
     height: 1%;
     margin-top: 4%;
-    margin-left: 2%;
+    margin-left: 3%;
 }
 
 .divN1 {
@@ -215,7 +215,7 @@ li span.active::before {
     width: 100px;
     height: 5%;
     margin-top: 10%;
-    margin-left: 5%;
+    margin-left: 4%;
 }
 .divIQTY {
     width: 100px;
@@ -228,7 +228,7 @@ li span.active::before {
     width: 100px;
     height: 5%;
     margin-top: 10%;
-    margin-left: 5%;
+    margin-left: 4%;
 }
 
 .divIHrg{
@@ -242,7 +242,7 @@ li span.active::before {
     width: 100px;
     height: 5%;
     margin-top: 10%;
-    margin-left: 7%;
+    margin-left: 4%;
 }
 .divIDate{
     width: 100px;

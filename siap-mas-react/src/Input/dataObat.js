@@ -4,7 +4,6 @@ import './dataObt.css';
 import {connect} from 'react-redux'
 import InputProduct from '../store/actions/InputProduct'
 
-
 class DataObat extends Component {
     state ={
         Code:'',
@@ -22,7 +21,6 @@ class DataObat extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.InputProduct(this.state);
-        console.log(this.state);
     }
 
     componentDidMount(){
@@ -39,6 +37,7 @@ class DataObat extends Component {
      animate={{opacity:1}}
      transition={{delay:1, duration:1.5}}
      >
+        <h3 align="center">Tambah Obat</h3>
 
      <div className="divo">
         
@@ -63,7 +62,7 @@ class DataObat extends Component {
          </input>
      </div>
      <div className="divQTY">
-         <label>
+         <label className="label3">
              QTY
          </label>
      </div>
@@ -100,18 +99,9 @@ class DataObat extends Component {
      </motion.input>
 
      </div>
-    
 
-    
-                    </motion.div>
+     </motion.div>
      </div>
-     
-
-   
-
-       
-       
-        
 </div>
 
 

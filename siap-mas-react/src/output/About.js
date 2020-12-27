@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 
-class Pr extends Component {
+class About extends Component {
     state = {
         isActive : false,
         email: '',
@@ -39,42 +39,17 @@ const Profile = (props) => {
         <div>
     
  <div className="container-form-profile">
- <div className="div-nip">
- <div className="tulisan">
+ <div><br/>
+        <h2 align="center">PROFIL</h2>
         </div>
-    Email 
-    <div className="titik">
-    :{props.profile.Email}        
+    <div>
+    <br/><br/>
+    SIAP MAS atau Sistem Informasi Apotek Puskesmas adalah Sistem Informasi yang bergerak pada bidang farmasi
+    untuk pengelolaaan data obat-obatan dan Alkes dari Puskesmas Sumber Wringin Bondowoso dan puskesmam pembantu, untuk
+    bertujuan untuk mempermudah dalam pencatatan data obat-obatan    
     </div>
  </div>
- <div className="div-nama">
-        Nama
-        <div className="titik">
-    :{props.profile.Nama}
-    </div>
- </div>
-<div className="div-hp">
-Telp
-<div className="titik">
-    :{props.profile.No_hp}
-    </div>
-</div>
-<div className="div-alamat">
-Alamat
-<div className="titik-2">
-    :{props.profile.Alamat}
-    </div>
-</div>
-<Link to="/EditProfile">
-<button style={{ height:"40px",width:"100px",paddingTop:"2px",paddingBottom:"2px",float:"right",marginTop:"80px",marginRight:"20px" }} className="InputButton"> Edit </button>
-</Link>
-</div>
- 
- <div className="bulat">
- <div className="profile-img">
-</div>
- </div>
-</div>)
+ </div>)
 }
 
 
@@ -85,4 +60,4 @@ const mapStateToProps = (state) => {
       profile:state.firebase.profile
     }
   }
-export default connect(mapStateToProps)(Pr) ;
+export default connect(mapStateToProps)(About) ;

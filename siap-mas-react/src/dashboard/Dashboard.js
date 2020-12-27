@@ -32,7 +32,7 @@ import { Link } from 'react-router-dom';
         
             <motion.div className="Polygon-Warp Polygon-2 ">
                 <motion.div className="Polygon">
-                    <Link to="/profile">
+                    <Link to="/About">
                         <motion.div whileHover={{ scale:0.96, transition: { duration: 0.25 } }}
                             className="Polygon-5-Img">
                         </motion.div>

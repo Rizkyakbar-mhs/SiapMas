@@ -18,6 +18,8 @@ class Obt extends Component {
 function Obat () {
 return(
 <div>
+
+        <Link to="/DataObat"><button className="InputButton" style={{ width:"200px",float:"right",marginRight:"70px",marginTop:"120px" }}> Tambah Obat </button></Link>  
     <div>
         <div className="Polygon-yellow-shadow Polygon-yellow ">
             <Link to="/DaftarObat">
@@ -42,7 +44,7 @@ return(
                 </div>
             </Link>
         </div>
-       
+     
         
 </div>
 </div>

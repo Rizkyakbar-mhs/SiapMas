@@ -87,7 +87,7 @@ class Login extends Component {
                     whileHover={{ scale:1.1 }}>
     
                 <motion.input 
-                    type="text" 
+                    type="password" 
                     placeholder="PASSWORD" 
                     className="InputPassword"
                     id="password"
