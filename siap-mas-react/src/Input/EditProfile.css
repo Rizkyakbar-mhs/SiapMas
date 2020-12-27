@@ -215,13 +215,13 @@ li span.active::before {
     width: 100px;
     height: 1%;
     margin-top: -50%;
-    margin-left: 200%;
+    margin-left: 170%;
 }
 
 .NamaU {
 
     border: 1px solid rgb(198, 224, 228);
-    border-radius: 25px;
+    border-radius: 18px;
     padding-left: 10px;
     background-origin: content-box;
     width: 420px;
@@ -234,13 +234,13 @@ li span.active::before {
     width: 100px;
     height: 1%;
     margin-top: -50%;
-    margin-left: 200%;
+    margin-left: 170%;
 }
 
 .NomerHp {
 
     border: 1px solid rgb(198, 224, 228);
-    border-radius: 25px;
+    border-radius: 18px;
     padding-left: 10px;
     background-origin: content-box;
     width: 420px;
@@ -253,14 +253,14 @@ li span.active::before {
     width: 100px;
     height: 1%;
     margin-top: -50%;
-    margin-left: 160px;
+    margin-left: 180%;
 }
 
 .divAlamatUser {
     width: 100px;
     height: 1%;
     margin-top: -50%;
-    margin-left: 200%;
+    margin-left: 175%;
 }
 
 .divButton2 {
@@ -286,7 +286,7 @@ li span.active::before {
 .AlamatUser {
 
     border: 1px solid rgb(198, 224, 228);
-    border-radius: 25px;
+    border-radius: 15px;
     padding-left: 10px;
     background-origin: content-box;
     width: 420px;
@@ -299,13 +299,13 @@ li span.active::before {
     width: 100px;
     height: 1%;
     margin-top: -50%;
-    margin-left: 160px;
+    margin-left: 170%;
 }
 
 .Email {
 
     border: 1px solid rgb(198, 224, 228);
-    border-radius: 25px;
+    border-radius: 18px;
     padding-left: 10px;
     background-origin: content-box;
     width: 420px;

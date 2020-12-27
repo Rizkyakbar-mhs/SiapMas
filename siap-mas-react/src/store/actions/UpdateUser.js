@@ -6,12 +6,11 @@ export const UpdateUser = (User) => {
 
     user.updateEmail(
         User.Email
-    ).then((resp)=>{
-        return firestore.collection('user').doc(resp.user.uid).update({
-            Nama: User.nama,
-            No_hp: User.hp,
-            Alamat: User.alamat,
-            Email: User.email
+    ).then(()=>{
+        return firestore.collection('user').doc(User.uid).update({
+            Nama: User.Nama,
+            No_hp: User.No_hp,
+            Alamat: User.Alamat,
         })
     }).then(()=>{
         dispatch({type: 'SIGNUP_SUCCESS'})

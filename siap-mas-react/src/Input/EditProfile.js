@@ -13,7 +13,8 @@ class EditPr extends Component {
         Email: '',
         Nama: '',
         No_hp:'',
-        Alamat:''
+        Alamat:'',
+        uid: this.props.auth.uid
     }
     handleChange = (e) => {
         this.setState({
@@ -28,14 +29,13 @@ class EditPr extends Component {
     }
 
     render(){
-        const { profile } = this.props;
+        const { profile,auth } = this.props;
         const Profil = this.Profile;
-        return(<Profil profile={profile} />
+        return(<Profil profile={profile} auth={auth}  />
             )
         }
 
 Profile = (props) => {
-    
     const s = 10;
     const shadowColor = `rgb(142, 141, 141)`;
      return(
@@ -82,7 +82,7 @@ Profile = (props) => {
          </div>
  </div>
 <div className="div-hp">
-No HP
+NoHP
 <div className="titik">
     :
     </div>
@@ -122,7 +122,7 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = (state) => {
     console.log(state);
     return{
-      auth: state.firebase.authm,
+      auth: state.firebase.auth,
       profile:state.firebase.profile
     }
   }
