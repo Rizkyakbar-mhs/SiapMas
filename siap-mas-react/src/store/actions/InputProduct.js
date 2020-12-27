@@ -9,7 +9,6 @@ const InputProduct = (product) => {
             dispatch({ type: 'InputProduct', product });
         }).catch((err) => {
             dispatch({ type: 'ErrorProduct', err});
-            <Redirect to="/obat" />
         })
     }
 };
