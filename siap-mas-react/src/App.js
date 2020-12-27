@@ -10,6 +10,8 @@ import DataObts from './Input/dataObat';
 import Pr from './output/profile';
 import DaftarObat from './dashboard/DaftarObat';
 import EditPr from './Input/EditProfile';
+import Report from './output/Report';
+
 class App extends Component {
   render(){
     const { auth } = this.props;
@@ -36,6 +38,8 @@ const LoginLinks = () => {
         <Route path="/DaftarObat" component={DaftarObat} />
         <Route path="/DataObat"   component={DataObts}/>
         <Route path="/EditProfile" component={EditPr}/>
+        <Route path="/Report"   component={Report}/>
+
         {/* <Route path="*"><Redirect to="/" /></Route> */}
       </Switch>
   </BrowserRouter>
