@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ProductList = ({products}) => {
     console.log(products);
@@ -10,7 +11,9 @@ const ProductList = ({products}) => {
       <th>Price</th>
       <th>Grand Price</th>
       <th>Exp Date</th>
-  </tr>
+      <th>Action</th>
+
+      </tr>
       { products && products.map(product => {
         return (
             <tr>
@@ -20,6 +23,7 @@ const ProductList = ({products}) => {
                 <td data-th="Price">{product.Price}</td>
                 <td data-th="Grand Price">{product.Price}</td>
                 <td data-th="Exp Date">{product.Date}</td>
+                <td data-th="Exp Date"><Link to="/DetailObat"><button>Detail</button></Link></td>
             </tr>
         )
       })}  

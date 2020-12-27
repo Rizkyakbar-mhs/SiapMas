@@ -1,11 +1,11 @@
 import React,{ Component } from 'react';
 import { motion } from "framer-motion";
-import './dataObt.css';   
+import './DetailObat.css';   
 import {connect} from 'react-redux'
 import InputProduct from '../store/actions/InputProduct'
 
 
-class DataObat extends Component {
+class DetailObat extends Component {
     state ={
         Code:'',
         Name:'',
@@ -124,4 +124,4 @@ const mapDispatchToProps = (dispatch) => {
         InputProduct:(product) => dispatch(InputProduct(product))
     }   
    }
-export default connect(null,mapDispatchToProps)(DataObat);
+export default connect(null,mapDispatchToProps)(DetailObat);
