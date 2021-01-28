@@ -4,8 +4,9 @@
     <title>SiapMas - Dashboard</title>
     @include('Templates/Header')
 </head>
-<body>
+<body class="landing-page sidebar-collapse">
     @include('Templates/Navbar')
+    @include('Dashboard/Index')
     @include('Templates/Footer')
 </body>
 </html>
