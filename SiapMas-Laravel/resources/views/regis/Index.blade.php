@@ -43,13 +43,13 @@
   <div class="col-lg-3 col-sm-4">
     <div class="form-group bmd-form-group">
       <label for="Passwrod" class="bmd-label-floating">Password...</label>
-      <input type="text" class="form-control" id="Password">
+      <input type="password" class="form-control" id="Password">
     </div>
   </div>
   <div class="col-lg-3 col-sm-4">
     <div class="form-group bmd-form-group">
       <label for="Confirm" class="bmd-label-floating">Confirm Password...</label>
-      <input type="text" class="form-control" id="Confirm">
+      <input type="password" class="form-control" id="Confirm">
     </div>
   </div>
     </div>
