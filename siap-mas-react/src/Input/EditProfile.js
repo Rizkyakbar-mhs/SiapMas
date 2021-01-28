@@ -9,7 +9,7 @@ import UpdateUser from '../store/actions/UpdateUser'
 
 class EditPr extends Component {
     state = {
-        isActive : false,
+        isActive : true,
         Email: '',
         Nama: '',
         No_hp:'',
@@ -24,8 +24,8 @@ class EditPr extends Component {
 
     handleSubmit = (e) => {
         console.log(this.state)
-        e.preventDefault();
-        this.props.UpdateUser(this.state)
+        // e.preventDefault();
+        // this.props.UpdateUser(this.state)
     }
 
     render(){
@@ -59,7 +59,7 @@ Profile = (props) => {
              
          </input>
          </div>
-    
+        <Link to="/profile">
     <div className="divButton2">
         <motion.input
         type="submit"
@@ -69,6 +69,7 @@ Profile = (props) => {
         whileHover={{scale:1.2}}
         ></motion.input>
         </div>
+        </Link>
  </div>
  <div className="div-nama">
         Nama

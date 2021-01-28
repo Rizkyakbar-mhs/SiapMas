@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import './dataObt.css';   
 import {connect} from 'react-redux'
 import InputProduct from '../store/actions/InputProduct'
+import { Link } from 'react-router-dom'
 
 class DataObat extends Component {
     state ={
@@ -91,14 +92,18 @@ class DataObat extends Component {
              
          </input>
      </div>
+     <Link to="/obat">
      <div className="divButton">
-     <motion.input type="submit" onClick={this.handleSubmit} className="InputSubmitObat" value="Tambah Obat"
+     <motion.input type="submit" 
+    //  onClick={this.handleSubmit} 
+     className="InputSubmitObat" value="Tambah Obat"
      whileHover={{scale:1.2}}
      >
 
      </motion.input>
 
      </div>
+     </Link>
 
      </motion.div>
      </div>

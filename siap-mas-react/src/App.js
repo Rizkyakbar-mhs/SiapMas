@@ -20,7 +20,7 @@ class App extends Component {
     console.log(auth);
     const session = auth;
     localStorage.setItem('userLogin', JSON.stringify(session));
-    const links =  auth.uid ? <LoginLinks /> : <NotLoginLinks /> ;
+    const links =  auth.uid ? <NotLoginLinks /> : <LoginLinks /> ;
     return (
         <div>
           {links}
@@ -33,7 +33,9 @@ const LoginLinks = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Dashboard}/>
+        <Route exact path="/" component={Login}/>
+        <Route path="/LupaPassword" component={LupaPassword} />
+        <Route path="/Dashboard" component={Dashboard}/>
         <Route path="/obat" component={Obt} />
         <Route path="/regis" component={Inpt} />
         <Route path="/profile" component={Pr} />

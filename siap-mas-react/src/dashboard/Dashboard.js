@@ -42,9 +42,13 @@ import { Link } from 'react-router-dom';
         
             <motion.div className="Polygon-Warp Polygon-3 ">
                 <motion.div className="Polygon">
+                    <Link to="/">
                     <motion.div whileHover={{ scale:0.96, transition: { duration: 0.25 } }} 
-                        role="Button" onClick={props.SignOut} className="Polygon-6-Img">
+                        role="Button" 
+                        // onClick={props.SignOut} 
+                        className="Polygon-6-Img">
                     </motion.div>
+                    </Link>
                 </motion.div>
             </motion.div>
 

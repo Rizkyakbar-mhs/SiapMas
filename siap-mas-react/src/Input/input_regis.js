@@ -24,7 +24,7 @@ class Inpt extends Component {
     
     handleSubmit = (e) => {
         e.preventDefault();
-        this.props.SignUp(this.state);
+        // this.props.SignUp(this.state);
     }
 
     componentDidMount(){
@@ -123,9 +123,10 @@ class Inpt extends Component {
                         animate={{scale:1}}
                     />
                     </div>
+                    <Link to="/Dashboard">
                     <div className="div5">
                     <motion.input type="submit" 
-                    onClick={this.handleSubmit}
+                    // onClick={this.handleSubmit}
                     transition={{delay:1.2 ,duration:0.5}}
                     initial={{scale:0}}
                     animate={{scale:1}}
@@ -133,6 +134,7 @@ class Inpt extends Component {
                         value="Daftar"
                         className="Inputtombol"/>
                     </div>
+                    </Link>
      </div>
 </div>
 </div>

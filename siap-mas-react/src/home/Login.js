@@ -151,10 +151,9 @@ class Login extends Component {
                     whileTap={{ x: -3, y: -3, boxShadow: `3px 3px 0 ${shadowColor}` }}
                     className="containerInput"
                     transition={{ duration:0.4, boxShadow: { velocity: 0 }, default: { type: "spring" }}}>
-                      <Link to="/home">
+                      <Link to="/Dashboard">
                       <motion.input type="submit" 
                         className="InputButton"
-                        onClick={this.handleSubmit}
                         value="LOGIN"
                         />
                       </Link>

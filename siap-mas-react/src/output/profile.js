@@ -44,25 +44,25 @@ const Profile = (props) => {
         </div>
     Email 
     <div className="titik">
-    :{props.profile.Email}        
+    :asunayuuki289@gmail.com     
     </div>
  </div>
  <div className="div-nama">
         Nama
         <div className="titik">
-    :{props.profile.Nama}
+    :RizkyAkbar
     </div>
  </div>
 <div className="div-hp">
 Telp
 <div className="titik">
-    :{props.profile.No_hp}
+    :08165428465
     </div>
 </div>
 <div className="div-alamat">
 Alamat
 <div className="titik-2">
-    :{props.profile.Alamat}
+    :Bondowoso
     </div>
 </div>
 <Link to="/EditProfile">
