@@ -9,17 +9,17 @@
           </li>
           <li>
             <a href="https://www.creative-tim.com/presentation">
-              About Us
+              Obat
             </a>
           </li>
           <li>
             <a href="https://www.creative-tim.com/blog">
-              Blog
+              About us
             </a>
           </li>
           <li>
             <a href="https://www.creative-tim.com/license">
-              Licenses
+              Guide
             </a>
           </li>
         </ul>
