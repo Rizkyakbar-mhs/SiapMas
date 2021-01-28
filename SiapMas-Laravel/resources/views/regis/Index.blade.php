@@ -1,9 +1,9 @@
 <div class="page-header header-filter clear-filter purple-filter"data-parallax="true" style="background-image: url({{asset('img/bg2.jpg')}}); transform: translate3d(0px, 258.4px,0px);"></div>
 <div class="main main-raised">
   <div class="section section-basic">
-    <div class="container">
+    <div class="container" style="max-width:900px">
       <div class="space-50">
-<div class="tittle">
+<div class="tittle text-center">
   <h2> Forum Register</h2>
 </div>
       </div>
@@ -31,7 +31,7 @@
   <div class="col-lg-3 col-sm-4">
     <div class="form-group bmd-form-group">
       <label for="Alamat" class="bmd-label-floating">Alamat...</label>
-      <input type="text" class="form-control" id="Alamat">
+      <textarea type="text" class="form-control" id="Alamat"></textarea>
     </div>
   </div>
   <div class="col-lg-3 col-sm-4">
@@ -55,7 +55,9 @@
     </div>
   </div>
 </div>
-<input type="submit" class="btn-success" value="Register" >
+<div class="footer text-center">
+<input type="submit" class="btn btn-round btn-success" value="Register" >
+</div>
 </div>
 
 
