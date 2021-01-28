@@ -55,6 +55,8 @@
     </div>
   </div>
 </div>
+<input type="submit" class="btn-success" value="Register" >
 </div>
+
 
     
