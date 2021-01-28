@@ -33,6 +33,7 @@ CREATE TABLE `drug` (
   `type` varchar(255) NOT NULL,
   `price` int(11) NOT NULL,
   `qty` int(11) NOT NULL,
+  `composition` varchar(255) NOT NULL,
   `exp_date` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
