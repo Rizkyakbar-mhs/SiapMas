@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-    <title>SiapMas - Welcome</title>
+    <title>{{ $title }}</title>
         @include('Templates/Header')
 
     </head>
@@ -10,7 +10,6 @@
         {{-- @include('Templates/Navbar') --}}
         @include('Main/Index')
         @include('Templates/Footer')
-
         
     </body>
 </html>

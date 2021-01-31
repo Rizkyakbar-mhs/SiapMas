@@ -11,14 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('Dashboard');
 });
 
-Route::get('/register', function () {
-    return view('Register');
-});
+Route::get('/', 'UserController@index');
+Route::get('/register', 'UserController@register');
+Route::get('/lupaPass', 'UserController@lupaPass');
+
+Route::post('/login', 'UserController@login');

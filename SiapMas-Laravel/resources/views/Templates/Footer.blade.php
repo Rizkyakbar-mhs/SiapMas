@@ -18,8 +18,8 @@
             </a>
           </li>
           <li>
-            <a href="https://www.creative-tim.com/license">
-              Guide
+            <a href="{{ url('/register') }} ">
+              SIGN UP
             </a>
           </li>
         </ul>
