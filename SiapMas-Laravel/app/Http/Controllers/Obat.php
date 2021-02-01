@@ -13,6 +13,6 @@ class Obat extends Controller
 
     public function tambahobat()
     {
-        return view('obat',['title' => 'SIAPMAS - Tambah Obat']);
+        return view('Obat',['title' => 'SIAPMAS - Tambah Obat']);
     }
 }

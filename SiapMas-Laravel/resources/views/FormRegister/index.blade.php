@@ -46,11 +46,11 @@
                                 </div>
                             </div>
 
-                          
+
 
                             <div class="form-group">
-                                <label for="Alamat" class="bmd-label-floating">Tanggal...</label>
-                                <input type="date" placeholder="" class="form-control datetimepicker" id="Alamat">
+                                <label id="forexp" class="label-control">Tanggal Kadaluarsa</label>
+                                <input type="text" class="form-control datetimepicker" id="exp">
                             </div>
                         </div>
                     </div>
@@ -63,3 +63,28 @@
         </div>
     </div>
 </form>
+
+
+
+<script>
+    $(document).ready(function() {
+        $(function() {
+            $('#exp').datetimepicker({
+                defaultDate: Date(),
+                format: 'YYYY-MM-DD'
+            });
+        });
+        // //init DateTimePickers
+        // materialKit.initFormExtendedDatetimepickers();
+
+    });
+
+    function scrollToDownload() {
+        if ($('.section-download').length != 0) {
+            $("html, body").animate({
+                scrollTop: $('.section-download').offset().top
+            }, 1000);
+        }
+    }
+
+</script>
