@@ -56,6 +56,11 @@
                     <div class="dropdown-menu dropdown-menu-right">
                         @if (Session::has('user_name'))
                             <h6 class="dropdown-header">{{ Str::ucfirst(strtolower(Session::get('user_name'))) }}</h6>
+                        @else
+                            <script>
+                                window.location = "/"
+
+                            </script>
                         @endif
                         <a href="javascript:;" class="dropdown-item">Profil</a>
                         <a href="javascript:;" class="dropdown-item">Laporan</a>
