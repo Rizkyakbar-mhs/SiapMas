@@ -15,4 +15,9 @@ class Obat extends Controller
     {
         return view('Obat',['title' => 'SIAPMAS - Tambah Obat']);
     }
+
+    public function dataobat()
+    {
+        return view('dataobat',['title' => 'SIAPMAS - Data Obat']);
+    }
 }

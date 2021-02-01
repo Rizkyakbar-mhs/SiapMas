@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
     <link href="css/material-kit.css" rel="stylesheet" />
+    <link href="css/material-dashboard.css" rel="stylesheet" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
@@ -23,3 +24,6 @@
     <!--  Google Maps Plugin    -->
     <!--    Material Kit          -->
     <script src="js/material-kit.js?v=2.0.7" type="text/javascript"></script>
+    <script src="js/material-dashboard.min.js?v=2.2.2" type="text/javascript"></script>
+    <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
+    <script src="js/plugins/jquery.dataTables.min.js"></script>
