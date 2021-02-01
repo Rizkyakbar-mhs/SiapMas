@@ -5,7 +5,15 @@
             <div class="col-md-8 ml-auto mr-auto">
                 <div class="brand">
                     <h1>Welcome to Sistem Informasi Apotek Puskesmas Sumber Wringin</h1>
-                    <h3>jalan wringin no 4</h3>
+                    <div>
+                        <span class="material-icons">home</span> <i> Jalan Wringin no 4 Kecamatan Bondowoso</i>
+                        
+                    </div>
+                    <div>
+                        <span class="material-icons">call</span> <i> Dial 08533443676</i>
+                        
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -35,7 +43,7 @@
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h4>
                                                     <i class="material-icons">location_on</i>
-                                                    Yellowstone National Park, United States
+                                                    Kegiatan Puskesmas Wringin
                                                 </h4>
                                             </div>
                                         </div>
@@ -44,7 +52,7 @@
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h4>
                                                     <i class="material-icons">location_on</i>
-                                                    Somewhere Beyond, United States
+                                                    Puskesmas Wringin
                                                 </h4>
                                             </div>
                                         </div>
@@ -53,7 +61,7 @@
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h4>
                                                     <i class="material-icons">location_on</i>
-                                                    Yellowstone National Park, United States
+                                                    obat baru
                                                 </h4>
                                             </div>
                                         </div>

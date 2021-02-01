@@ -10,15 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/dashboard', function () {
-    return view('Dashboard');
-});
-
 Route::get('/', 'UserController@index');
-Route::get('/register', 'UserController@register');
+Route::get('/dashboard', 'UserController@dashboard');
+Route::get('/register', 'Regis@index');
 Route::get('/lupaPass', 'UserController@lupaPass');
 Route::get('/Tambah-Obat', 'Obat@tambahobat');
 Route::get('/DataObat', 'Obat@dataObat');
 
 Route::post('/login', 'UserController@login');
+Route::post('/regis', 'Regis@regis');
