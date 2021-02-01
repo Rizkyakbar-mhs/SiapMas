@@ -55,7 +55,7 @@
                         </div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <h6 class="dropdown-header">Nama yang Log In</h6>
+                        <h6 class="dropdown-header">{{ $session }}</h6>
                         <a href="javascript:;" class="dropdown-item">Profil</a>
                         <a href="javascript:;" class="dropdown-item">laporan</a>
                         <a href="javascript:;" class="dropdown-item">Sign out</a>

@@ -10,7 +10,8 @@
         </div>
     </div>
 </div>
-<form action="" class="form">
+<form method="post" action="/regis" class="form">
+@csrf
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-6 ml-auto mr-auto">
@@ -27,45 +28,49 @@
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="NIP" class="bmd-label-floating">NIP...</label>
-                                    <input type="text" class="form-control" id="NIP">
+                                    <input type="text" class="form-control" name="NIP" value="{{ old('NIP') }}" 
+                                    id="NIP">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="Nama" class="bmd-label-floating">Nama...</label>
-                                    <input type="text" class="form-control" id="Nama">
+                                    <label for="Nama" class="bmd-label-floating">Name...</label>
+                                    <input type="text" class="form-control" name="name" value="{{ old('name') }}" 
+                                    id="Nama">
                                 </div>
                             </div>
-
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="Email" class="bmd-label-floating">Email...</label>
-                                    <input type="text" class="form-control" id="Email">
+                                    <input type="text" class="form-control" name="email" value="{{ old('email') }}" 
+                                    id="Email">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="HP" class="bmd-label-floating">No Hp...</label>
-                                    <input type="text" class="form-control" id="HP">
+                                    <label for="HP" class="bmd-label-floating">Dial...</label>
+                                    <input type="text" class="form-control" name="dial" value="{{ old('dial') }}" 
+                                    id="HP">
                                 </div>
                             </div>
-
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="Passwrod" class="bmd-label-floating">Password...</label>
-                                    <input type="password" class="form-control" id="Password">
+                                    <input type="password" class="form-control" name="password" id="Password">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="Confirm" class="bmd-label-floating">Confirm Password...</label>
                                     <input type="password" class="form-control" id="Confirm">
                                 </div>
                             </div>
-
                             <div class="form-group">
-                                <label for="Alamat" class="bmd-label-floating">Alamat...</label>
-                                <input type="text" class="form-control" id="Alamat">
+                                <label for="Alamat" class="bmd-label-floating">Address...</label>
+                                <input type="text" class="form-control" name="address" value="{{ old('address') }}"
+                                id="Alamat">
                             </div>
                         </div>
                     </div>
                     <div class="footer text-center">
-                        <input type="submit" class="btn btn-round btn-success" value="Register"
+                        <button type="submit" class="btn btn-round btn-success"
                             style="margin-bottom:20px">
+                            REGISTRASI
+                        </button>
                     </div>
                 </div>
             </div>
