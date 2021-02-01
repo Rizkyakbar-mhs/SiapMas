@@ -18,5 +18,6 @@ Route::get('/dashboard', function () {
 Route::get('/', 'UserController@index');
 Route::get('/register', 'UserController@register');
 Route::get('/lupaPass', 'UserController@lupaPass');
+Route::get('/Tambah-Obat', 'Obat@tambahobat');
 
 Route::post('/login', 'UserController@login');
