@@ -21,7 +21,8 @@
                             <div class="space-50">
                                 <h5 class="card-category card-category-social">
                                     <div>
-                                        <span class="material-icons">person_add</span> <i>Registrasi</i>
+                                        <span class="material-icons">person_add</span>
+                                        <a class="btn btn-fill btn-info" style="color:white" disabled>Registrasi</a>
                                     </div>
                                 </h5>
                             </div>
