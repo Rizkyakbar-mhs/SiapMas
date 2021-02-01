@@ -2,8 +2,8 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <title>{{ $title }}</title>
     @include('Templates/Header')
+    <link href="css/material-dashboard.css" rel="stylesheet" />
 
 </head>
 

@@ -19,7 +19,7 @@
                         <i class="material-icons">how_to_reg</i> Users
                     </a>
                     <div class="dropdown-menu dropdown-with-icons">
-                        <a href="../index.html" class="dropdown-item">
+                        <a href="/register" class="dropdown-item">
                             <i class="material-icons">person_add</i> Registrasi Pegawai
                         </a>
                         <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html"
@@ -33,11 +33,10 @@
                         <i class="material-icons">medication</i> Data Obat
                     </a>
                     <div class="dropdown-menu dropdown-with-icons">
-                        <a href="../index.html" class="dropdown-item">
+                        <a href="/Tambah-Obat" class="dropdown-item">
                             <i class="material-icons">add</i> Tambah Data Obat
                         </a>
-                        <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html"
-                            class="dropdown-item">
+                        <a href="/Data-Obat" class="dropdown-item">
                             <i class="material-icons">medication</i> Data Obat
                         </a>
                     </div>
@@ -55,7 +54,9 @@
                         </div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <h6 class="dropdown-header">{{ Str::ucfirst(strtolower($session)) }}</h6>
+                        @if (Session::has('user_name'))
+                            <h6 class="dropdown-header">{{ Str::ucfirst(strtolower(Session::get('user_name'))) }}</h6>
+                        @endif
                         <a href="javascript:;" class="dropdown-item">Profil</a>
                         <a href="javascript:;" class="dropdown-item">Laporan</a>
                         <a href="javascript:;" class="dropdown-item">Sign out</a>

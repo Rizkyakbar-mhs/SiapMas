@@ -7,13 +7,13 @@
                     <h1>Welcome to Sistem Informasi Apotek Puskesmas Sumber Wringin</h1>
                     <div>
                         <span class="material-icons">home</span> <i> Jalan Wringin no 4 Kecamatan Bondowoso</i>
-                        
+
                     </div>
                     <div>
                         <span class="material-icons">call</span> <i> Dial 08533443676</i>
-                        
+
                     </div>
-                    
+
                 </div>
             </div>
         </div>
