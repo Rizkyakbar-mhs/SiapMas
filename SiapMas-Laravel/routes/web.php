@@ -14,8 +14,8 @@ Route::get('/', 'UserController@index');
 Route::get('/dashboard', 'UserController@dashboard');
 Route::get('/register', 'Regis@index');
 Route::get('/lupaPass', 'UserController@lupaPass');
-Route::get('/Tambah-Obat', 'Obat@tambahobat');
-Route::get('/DataObat', 'Obat@dataObat');
+Route::get('/tambahObat', 'DrugController@tambahobat');
+Route::get('/dataObat', 'DrugController@dataObat');
 
 Route::post('/login', 'UserController@login');
 Route::post('/regis', 'Regis@regis');

@@ -2,7 +2,7 @@
     id="sectionsNav">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
+            <a class="navbar-brand" href="{{ url('/dashboard') }}">
                 SiapMas </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -33,10 +33,10 @@
                         <i class="material-icons">medication</i> Data Obat
                     </a>
                     <div class="dropdown-menu dropdown-with-icons">
-                        <a href="/Tambah-Obat" class="dropdown-item">
+                        <a href="{{ url('/tambahObat') }}" class="dropdown-item">
                             <i class="material-icons">add</i> Tambah Data Obat
                         </a>
-                        <a href="/Data-Obat" class="dropdown-item">
+                        <a href="{{ url('/dataObat') }}" class="dropdown-item">
                             <i class="material-icons">medication</i> Data Obat
                         </a>
                     </div>
@@ -57,10 +57,10 @@
                         @if (Session::has('user_name'))
                             <h6 class="dropdown-header">{{ Str::ucfirst(strtolower(Session::get('user_name'))) }}</h6>
                         @else
-                            <script>
+                            <!-- <script>
                                 window.location = "/"
 
-                            </script>
+                            </script> -->
                         @endif
                         <a href="javascript:;" class="dropdown-item">Profil</a>
                         <a href="javascript:;" class="dropdown-item">Laporan</a>

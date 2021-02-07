@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\DrugModel;
 
-class Obat extends Controller
+class DrugController extends Controller
 {
     public function index()
     {
@@ -18,6 +19,7 @@ class Obat extends Controller
 
     public function dataobat()
     {
-        return view('dataobat',['title' => 'SIAPMAS - Data Obat']);
+        $drugData = DrugModel::all();
+        return view('dataobat',['title' => 'SIAPMAS - Data Obat', 'drugData' => $drugData]);
     }
 }
