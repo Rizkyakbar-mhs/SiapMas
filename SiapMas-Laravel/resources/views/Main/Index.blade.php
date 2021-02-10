@@ -8,13 +8,13 @@
                 <div class="card-header card-header-primary text-center">
                   <h4 class="card-title">Login</h4>
                     <div class="social-line">
-                      <a href="#pablo" class="btn btn-just-icon btn-link">
+                      <a href="http://facebook.com/zl_xxiv" class="btn btn-just-icon btn-link">
                         <i class="fa fa-facebook-square"></i>
                       </a>
                       <a href="http://twitter.com/zl_xxiv" class="btn btn-just-icon btn-link">
                         <i class="fa fa-twitter"></i>
                       </a>
-                      <a href="#pablo" class="btn btn-just-icon btn-link">
+                      <a href="http://instagram.com/zl_xxiv" class="btn btn-just-icon btn-link">
                         <i class="fa fa-google-plus"></i>
                       </a>
                     </div>

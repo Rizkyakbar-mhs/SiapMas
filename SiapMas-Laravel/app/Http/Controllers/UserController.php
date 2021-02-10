@@ -14,6 +14,11 @@ class UserController extends Controller
         return view('main',['title' => 'SIAPMAS - LOGIN']);
     }
     
+    public function lupaPass()
+    {
+        return view('lupapass',['title' => 'SIAPMAS - LOGIN']);
+    }
+    
     public function login(Request $request)
     {
         $this->validate($request,[
@@ -54,5 +59,15 @@ class UserController extends Controller
     {
         $drugData = UserModel::all();
         return view('datauser',['title' => 'SIAPMAS - Data User', 'drugData' => $drugData]);
+    }
+
+    public function profil(Request $profil)
+    {
+
+        $prof = $profil->session()->get('email');
+        $userprofil = json_decode(UserModel::all()->where('email',$prof)->get(), true);
+        
+        return view('dashboard',['title' => 'SIAPMAS - PROFIL','session' => $userprofil]);
+
     }
 }

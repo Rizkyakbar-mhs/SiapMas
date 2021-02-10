@@ -4,13 +4,14 @@
         <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
                 <div class="brand">
-                    <h1>Form Obat</h1>
+                    <h1>Profil Pengguna</h1>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<form action="" class="form">
+<form method="post" action="{{ url('/register') }}" class="form">
+@csrf
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-6 ml-auto mr-auto">
@@ -20,71 +21,61 @@
                             <div class="space-50">
                                 <h5 class="card-category card-category-social">
                                     <div>
-                                        <span class="material-icons">medication</span> <i>Tambah Obat</i>
+                                        <span class="material-icons">person_add</span>
+                                        <a class="btn btn-fill btn-info" style="color:white" disabled>Profil</a>
                                     </div>
                                 </h5>
                             </div>
+                            @foreach($userprofil as $profil)
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="NIP" class="bmd-label-floating">Kode Obat...</label>
-                                   
+                                    <label for="NIP" class="bmd-label-floating">NIP...</label>
+                                    <input type="text" class="form-control" name="NIP" placeholder="{{ $userprofil->user_id }}" 
+                                    id="NIP">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="Nama" class="bmd-label-floating">Nama Obat...</label>
-                                   
+                                    <label for="Nama" class="bmd-label-floating">Name...</label>
+                                    <input type="text" class="form-control" name="name" placeholder="{{ $userprofil->user_name }}" 
+                                    id="Nama">
                                 </div>
                             </div>
-
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="Email" class="bmd-label-floating">Stock...</label>
-                                   
+                                    <label for="Email" class="bmd-label-floating">Email...</label>
+                                    <input type="text" class="form-control" name="email" placeholder="{{ $userprofil->email }}" 
+                                    id="Email">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="HP" class="bmd-label-floating">Harga...</label>
-                                    
+                                    <label for="HP" class="bmd-label-floating">Dial...</label>
+                                    <input type="text" class="form-control" name="dial" placeholder="{{ $userprofil->user_dial }}" 
+                                    id="HP">
                                 </div>
                             </div>
-
-
-
+                            <!-- <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="Passwrod" class="bmd-label-floating">Password...</label>
+                                    <input type="password" class="form-control" name="password" id="Password">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="Confirm" class="bmd-label-floating">Confirm Password...</label>
+                                    <input type="password" class="form-control" id="Confirm">
+                                </div>
+                            </div> -->
                             <div class="form-group">
-                                <label id="forexp" class="label-control">Tanggal Kadaluarsa</label>
-                                
+                                <label for="Alamat" class="bmd-label-floating">Address...</label>
+                                <input type="text" class="form-control" name="address" placeholder="{{ $userprofil->user_address }}"
+                                id="Alamat">
                             </div>
                         </div>
                     </div>
                     <div class="footer text-center">
-                        <input type="submit" class="btn btn-round btn-success" value="Tambah Obat"
+                        <button type="submit" class="btn btn-round btn-success"
                             style="margin-bottom:20px">
+                            EDIT PROFIL
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </form>
-
-
-
-<script>
-    $(document).ready(function() {
-        $(function() {
-            $('#exp').datetimepicker({
-                defaultDate: Date(),
-                format: 'YYYY-MM-DD'
-            });
-        });
-        // //init DateTimePickers
-        // materialKit.initFormExtendedDatetimepickers();
-
-    });
-
-    function scrollToDownload() {
-        if ($('.section-download').length != 0) {
-            $("html, body").animate({
-                scrollTop: $('.section-download').offset().top
-            }, 1000);
-        }
-    }
-
-</script>
