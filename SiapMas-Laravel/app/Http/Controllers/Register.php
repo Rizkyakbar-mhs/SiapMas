@@ -7,14 +7,14 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\UserModel;
 
-class Regis extends Controller
+class Register extends Controller
 {
     public function index()
     {
         return view('register',['title' => 'SIAPMAS - REGISTER']);
     }
 
-    public function regis(Request $regis)
+    public function register(Request $regis)
     {
         $registrasi = new UserModel;
 

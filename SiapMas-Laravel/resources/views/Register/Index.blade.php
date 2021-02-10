@@ -10,7 +10,7 @@
         </div>
     </div>
 </div>
-<form method="post" action="/regis" class="form">
+<form method="post" action="{{ url('/register') }}" class="form">
 @csrf
     <div class="container">
         <div class="row">
