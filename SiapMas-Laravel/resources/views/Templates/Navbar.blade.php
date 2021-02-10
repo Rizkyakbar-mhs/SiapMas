@@ -19,11 +19,10 @@
                         <i class="material-icons">how_to_reg</i> Users
                     </a>
                     <div class="dropdown-menu dropdown-with-icons">
-                        <a href="/register" class="dropdown-item">
-                            <i class="material-icons">person_add</i> Registrasi Pegawai
+                        <a href="{{ url('/register') }}" class="dropdown-item">
+                            <i class="material-icons">person_add</i> Registrasi User
                         </a>
-                        <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html"
-                            class="dropdown-item">
+                        <a href="{{ url('/dataUser') }}" class="dropdown-item">
                             <i class="material-icons">people</i> Data Pegawai
                         </a>
                     </div>

@@ -12,10 +12,13 @@
 */
 Route::get('/', 'UserController@index');
 Route::get('/dashboard', 'UserController@dashboard');
-Route::get('/register', 'Regis@index');
+Route::get('/register', 'Register@index');
 Route::get('/lupaPass', 'UserController@lupaPass');
-Route::get('/tambahObat', 'DrugController@tambahobat');
+Route::get('/dataUser', 'UserController@dataUser');
+Route::get('/tambahObat', 'DrugController@tambahObat');
+Route::get('/tambahObatManual', 'DrugController@tambahObatManual');
 Route::get('/dataObat', 'DrugController@dataObat');
 
 Route::post('/login', 'UserController@login');
-Route::post('/regis', 'Regis@regis');
+Route::post('/register', 'Register@register');
+Route::post('/tambahManual', 'DrugController@tambahManual');

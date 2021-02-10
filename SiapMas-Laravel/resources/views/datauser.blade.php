@@ -3,14 +3,14 @@
 
 <head>
     @include('Templates/Header')
-    <link href="css/material-kit.css" rel="stylesheet" />
+    <link href="css/material-dashboard.css" rel="stylesheet" />
 
 </head>
 
-<body class="index-page sidebar-collapse">
+<body class="landing-page sidebar-collapse">
 
     @include('Templates/Navbar')
-    @include('Register/Index')
+    @include('DataUser/Index')
     @include('Templates/Footer')
 
 

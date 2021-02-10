@@ -11,7 +11,7 @@ class UserController extends Controller
 {
     public function index()
     {
-        return view('welcome',['title' => 'SIAPMAS - LOGIN']);
+        return view('main',['title' => 'SIAPMAS - LOGIN']);
     }
     
     public function login(Request $request)
@@ -48,5 +48,11 @@ class UserController extends Controller
         foreach($user as $data) {
         return view('dashboard',['title' => 'SIAPMAS - DASHBOARD','session' => $data['user_name']]);
         }
+    }
+
+    public function dataUser()
+    {
+        $drugData = UserModel::all();
+        return view('datauser',['title' => 'SIAPMAS - Data User', 'drugData' => $drugData]);
     }
 }

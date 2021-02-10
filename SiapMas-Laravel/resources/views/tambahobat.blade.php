@@ -7,11 +7,12 @@
 
 </head>
 
-<body class="login-page sidebar-collapse">
+<body class="index-page sidebar-collapse">
 
-    {{-- @include('Templates/Navbar') --}}
-    @include('Main/Index')
+    @include('Templates/Navbar')
+    @include('TambahObat/Index')
     @include('Templates/Footer')
+
 
 </body>
 

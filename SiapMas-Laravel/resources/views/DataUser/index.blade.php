@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
                 <div class="brand" style="text-align: center">
-                    <h1>Data Obat</h1>
+                    <h1>Data User</h1>
                 </div>
             </div>
         </div>
@@ -27,22 +27,20 @@
                                             cellspacing="0" width="100%" style="width:100%">
                                             <thead>
                                                 <tr>
-                                                    <th>Drug Code</th>
-                                                    <th>Drug Name</th>
-                                                    <th>Price</th>
-                                                    <th>Quantity</th>
-                                                    <th>Expired Date</th>
+                                                    <th>Name</th>
+                                                    <th>Email</th>
+                                                    <th>Dial</th>
+                                                    <th>Address</th>
                                                     <th class="disabled-sorting text-right">Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                             @foreach($drugData as $drug)
                                                 <tr>
-                                                    <td>{{ $drug->drug_id }}</td>
-                                                    <td>{{ $drug->drug_name }}</td>
-                                                    <td>{{ $drug->price }}</td>
-                                                    <td>{{ $drug->qty }}</td>
-                                                    <td>{{ $drug->exp_date }}</td>
+                                                    <td>{{ $drug->user_name }}</td>
+                                                    <td>{{ $drug->email }}</td>
+                                                    <td>{{ $drug->user_dial }}</td>
+                                                    <td>{{ $drug->user_address }}</td>
                                                     <td class="text-right">
                                                         <a href="#" class="btn btn-link btn-info btn-just-icon like"><i
                                                                 class="material-icons">favorite</i></a>

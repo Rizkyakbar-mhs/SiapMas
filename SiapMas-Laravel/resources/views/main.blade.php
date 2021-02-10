@@ -7,12 +7,10 @@
 
 </head>
 
-<body class="index-page sidebar-collapse">
+<body class="login-page sidebar-collapse">
 
-    @include('Templates/Navbar')
-    @include('FormRegister/Index')
+    @include('Main/Index')
     @include('Templates/Footer')
-
 
 </body>
 
