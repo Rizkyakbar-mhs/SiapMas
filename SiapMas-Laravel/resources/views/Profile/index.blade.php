@@ -30,24 +30,24 @@
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="NIP" class="bmd-label-floating">NIP...</label>
-                                    <input type="text" class="form-control" name="NIP" placeholder="{{ $userprofil->user_id }}" 
+                                    <input type="text" class="form-control" name="NIP" value="{{ $profil['user_id'] }}" 
                                     id="NIP">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="Nama" class="bmd-label-floating">Name...</label>
-                                    <input type="text" class="form-control" name="name" placeholder="{{ $userprofil->user_name }}" 
+                                    <input type="text" class="form-control" name="name" value="{{ $profil['user_name'] }}" 
                                     id="Nama">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="Email" class="bmd-label-floating">Email...</label>
-                                    <input type="text" class="form-control" name="email" placeholder="{{ $userprofil->email }}" 
+                                    <input type="text" class="form-control" name="email" value="{{ $profil['email'] }}" 
                                     id="Email">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="HP" class="bmd-label-floating">Dial...</label>
-                                    <input type="text" class="form-control" name="dial" placeholder="{{ $userprofil->user_dial }}" 
+                                    <input type="text" class="form-control" name="dial" value="{{ $profil['user_dial'] }}" 
                                     id="HP">
                                 </div>
                             </div>
@@ -63,11 +63,12 @@
                             </div> -->
                             <div class="form-group">
                                 <label for="Alamat" class="bmd-label-floating">Address...</label>
-                                <input type="text" class="form-control" name="address" placeholder="{{ $userprofil->user_address }}"
+                                <input type="text" class="form-control" name="address" value="{{ $profil['user_address'] }}"
                                 id="Alamat">
                             </div>
                         </div>
                     </div>
+                    @endforeach
                     <div class="footer text-center">
                         <button type="submit" class="btn btn-round btn-success"
                             style="margin-bottom:20px">

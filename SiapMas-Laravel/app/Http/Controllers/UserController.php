@@ -65,9 +65,17 @@ class UserController extends Controller
     {
 
         $prof = $profil->session()->get('email');
-        $userprofil = json_decode(UserModel::all()->where('email',$prof)->get(), true);
+        $userprofil = json_decode(UserModel::all()->where('email',$prof), true);
         
-        return view('dashboard',['title' => 'SIAPMAS - PROFIL','session' => $userprofil]);
+        return view('profil',['title' => 'SIAPMAS - PROFIL','userprofil' => $userprofil]);
+
+    }
+
+    public function signOut(Request $signout)
+    {
+
+        $signout->session()->flush();
+        return redirect('/');
 
     }
 }

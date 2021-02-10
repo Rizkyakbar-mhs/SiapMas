@@ -61,9 +61,9 @@
 
                             </script> -->
                         @endif
-                        <a href="javascript:;" class="dropdown-item">Profil</a>
+                        <a href="{{ url('/profil') }}" class="dropdown-item">Profil</a>
                         <a href="javascript:;" class="dropdown-item">Laporan</a>
-                        <a href="javascript:;" class="dropdown-item">Sign out</a>
+                        <a href="{{ url('/signOut') }}" class="dropdown-item">Sign out</a>
                     </div>
                 </li>
                 <li class="nav-item">
