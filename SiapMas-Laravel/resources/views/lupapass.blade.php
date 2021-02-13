@@ -9,7 +9,7 @@
 
 <body class="index-page sidebar-collapse">
 
-    @include('Templates/Navbar')
+    @include('Templates/Header')
     @include('LupaPass/Index')
     @include('Templates/Footer')
 

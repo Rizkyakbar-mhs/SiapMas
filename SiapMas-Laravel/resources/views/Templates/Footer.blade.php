@@ -2,11 +2,11 @@
     <div class="container">
         <nav class="float-left">
             <ul>
-                <li>
+                <!-- <li>
                     <a href="{{ url('/') }}">
                         Login
                     </a>
-                </li>
+                </li> -->
                 <li>
                     <a href="{{ url('/ourteam') }}">
                         Our Team
