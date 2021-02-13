@@ -1,6 +1,9 @@
 <div class="page-header header-filter"
     style="background-image: url({{ asset('img/bg7.jpg') }}); background-size: cover; background-position: top center;">
     <div class="container">
+    @if(Session::has('validasi'))
+      <script type='text/javascript'>alert('{{ Session::get('validasi') }}');</script>
+    @endif
         <div class="row">
           <div class="col-lg-4 col-md-6 ml-auto mr-auto">
             <div class="card card-login">
@@ -30,7 +33,8 @@
                               <div class="form-group">
                                 <label for="email" class="bmd-label-floating">Email...</label>
                                   <input id="email" name="email" value="{{ old('email') }}" type="email" class="form-control">
-                                    <span class="bmd-help">We'll never share your email with anyone else.</span>
+                                    <span class="bmd-help">We'll never share your email with anyone else.
+                                    </span>
                               </div>
                             </div>
                           </div>

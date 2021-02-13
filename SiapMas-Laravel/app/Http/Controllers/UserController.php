@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\UserModel;
+use Session;
 
 class UserController extends Controller
 {
@@ -21,7 +22,7 @@ class UserController extends Controller
     
     public function login(Request $request)
     {
-        $this->validate($request,[
+        $validator = $this->validate($request,[
             'email' => 'required',
             'password' => 'required'
         ]);
@@ -34,10 +35,12 @@ class UserController extends Controller
                 $request->session()->put('email',$request->email);
                 return redirect('/dashboard');
             }else{
+                $request->session()->put('validasi', 'Password Salah');
                 return redirect('/');
             }
         }else{
-        return redirect('/');
+            $request->session()->put('validasi', 'Email Tidak Terdaftar');
+            return redirect('/');
         }
     }
     
@@ -63,11 +66,13 @@ class UserController extends Controller
 
     public function profil(Request $profil)
     {
+        if ($profil->session()->has('email')) {
+            $prof = $profil->session()->get('email');
+            $userprofil = json_decode(UserModel::all()->where('email',$prof), true);
+            return view('profil',['title' => 'SIAPMAS - PROFIL','userprofil' => $userprofil]);
+        }else{
 
-        $prof = $profil->session()->get('email');
-        $userprofil = json_decode(UserModel::all()->where('email',$prof), true);
-        
-        return view('profil',['title' => 'SIAPMAS - PROFIL','userprofil' => $userprofil]);
+        }
 
     }
 

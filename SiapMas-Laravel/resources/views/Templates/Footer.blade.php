@@ -3,25 +3,25 @@
         <nav class="float-left">
             <ul>
                 <li>
-                    <a href="#">
-                        SiapMas
+                    <a href="{{ url('/') }}">
+                        Login
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.creative-tim.com/presentation">
-                        Obat
+                    <a href="{{ url('/ourteam') }}">
+                        Our Team
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.creative-tim.com/blog">
+                    <a href="{{ url('/aboutus') }}">
                         About us
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="{{ url('/register') }} ">
                         SIGN UP
                     </a>
-                </li>
+                </li> -->
             </ul>
         </nav>
         <div class="copyright float-right">

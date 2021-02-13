@@ -20,6 +20,7 @@ Route::get('/tambahObatManual', 'DrugController@tambahObatManual');
 Route::get('/dataObat', 'DrugController@dataObat');
 Route::get('/signOut', 'UserController@signOut');
 Route::get('/profil', 'UserController@profil');
+Route::get('/ourteam', 'DashboardController@ourteam');
 
 Route::post('/login', 'UserController@login');
 Route::post('/register', 'Register@register');

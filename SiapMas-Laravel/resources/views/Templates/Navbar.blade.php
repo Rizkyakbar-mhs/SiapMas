@@ -2,8 +2,8 @@
     id="sectionsNav">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="{{ url('/dashboard') }}">
-                SiapMas </a>
+        <a class="navbar-brand" href="{{ url('/dashboard') }}">
+                <h3>SIAPMAS DASHBOARD<h3> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="sr-only">Navigation</span>
@@ -48,31 +48,19 @@
                 <li class="dropdown nav-item">
                     <a href="javascript:;" class="profile-photo dropdown-toggle nav-link" data-toggle="dropdown">
                         <div class="profile-photo-small">
-                            <img src={{ asset('img/faces/avatar.jpg') }} alt="Circle Image"
+                            <img src={{ asset('img/fabryzal.jpg') }} alt="Circle Image"
                                 class="rounded-circle img-fluid">
                         </div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        @if (Session::has('user_name'))
-                            <h6 class="dropdown-header">{{ Str::ucfirst(strtolower(Session::get('user_name'))) }}</h6>
-                        @else
-                            <!-- <script>
-                                window.location = "/"
-
-                            </script> -->
-                        @endif
                         <a href="{{ url('/profil') }}" class="dropdown-item">Profil</a>
-                        <a href="javascript:;" class="dropdown-item">Laporan</a>
+                        <a href="{{ url('/report') }}" class="dropdown-item">Laporan</a>
                         <a href="{{ url('/signOut') }}" class="dropdown-item">Sign out</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom"
-                        href="https://www.instagram.com/CreativeTimOfficial" target="_blank"
-                        data-original-title="Follow us on Instagram" rel="nofollow">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                </li>
+                <div>
+                    {{ $session }}
+                </div>
             </ul>
         </div>
     </div>
