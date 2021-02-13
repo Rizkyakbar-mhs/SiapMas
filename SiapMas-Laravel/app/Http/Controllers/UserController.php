@@ -85,9 +85,19 @@ class UserController extends Controller
 
     public function signOut(Request $signout)
     {
-
         $signout->session()->flush();
         return redirect('/');
+    }
+
+    public function resetPass(Request $reset)
+    {
+    $from = "noreply@siapmas.com";    
+    $to = $reset->email;    
+    $subject = "Reset Password";    
+    $message = "Klik link berikut untuk mereset password";   
+    $headers = "From:" . $from;    
+    return mail($to,$subject,$message, $headers); 
 
     }
+
 }

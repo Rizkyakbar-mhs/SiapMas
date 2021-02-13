@@ -4,7 +4,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 ml-auto mr-auto">
             <div class="card card-login">
-              <form class="form" method="POST" action="/login">
+              <form class="form" method="POST" action="{{ url('/resetPass') }}">
               @csrf
                 <div class="card-header card-header-primary text-center">
                   <h4 class="card-title">Lupa Password</h4>
@@ -43,7 +43,7 @@
                     <br><br><br><br><br>
                       <div class="footer text-center" style="margin-bottom: 10px">
                         <button class="btn btn-primary btn-round"><i class="material-icons">done</i>
-                                Confirm</button>
+                                Reset Password</button>
                         <a href="{{ url('/') }}" class="btn btn-primary btn-round"><i class="material-icons">help</i>Login Page</a>
                       </div>
               </form>

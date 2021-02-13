@@ -22,6 +22,7 @@ Route::get('/signOut', 'UserController@signOut');
 Route::get('/profil', 'UserController@profil');
 Route::get('/ourteam', 'DashboardController@ourteam');
 
+Route::post('/resetPass', 'UserController@resetPass');
 Route::post('/login', 'UserController@login');
 Route::post('/register', 'Register@register');
 Route::post('/tambahManual', 'DrugController@tambahManual');

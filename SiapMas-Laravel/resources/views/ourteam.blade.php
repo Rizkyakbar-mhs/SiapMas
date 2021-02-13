@@ -7,7 +7,6 @@
 </head>
 
 <body class="landing-page sidebar-collapse">
-    @include('Templates/Navbar')
     @include('OurTeam/Index')
     @include('Templates/Footer')
 </body>
